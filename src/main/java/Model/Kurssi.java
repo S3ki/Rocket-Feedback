@@ -7,7 +7,7 @@ public class Kurssi {
     private String nimi;
 
     // Lista palautteista
-    private List<String> feedbackList;
+    private List<FeedBack> feedbackList;
 
     // Kurssin konstruktori
     public Kurssi(String nimi) {
@@ -16,16 +16,28 @@ public class Kurssi {
     }
 
     // Lisää palautetta
-    public void addFeedback(String feedback) {
-        this.feedbackList.add(feedback);
-        System.out.println("Palaute lisätty: " + feedback);
+    public void addFeedback(String feedbackText, String opiskelijanNimi) {
+        FeedBack feedback = new FeedBack(feedbackText);
+        feedbackList.add(feedback);
+        System.out.println("Palaute lisätty: " + feedbackText);
     }
 
     // Poista palaute indeksin mukaan
     public void removeFeedback(int index) {
         if (index >= 0 && index < feedbackList.size()) {
-            String removedFeedback = feedbackList.remove(index);
-            System.out.println("Palautetta poistettu: " + removedFeedback);
+            FeedBack removedFeedback = feedbackList.remove(index);
+            System.out.println("Palautetta poistettu: " + removedFeedback.getFeedbackText());
+        } else {
+            System.out.println("Virhe: Indeksi ei kelpaa.");
+        }
+    }
+
+    // Vastaa palautteeseen
+    public void answerFeedback(int index, String vastaus) {
+        if (index >= 0 && index < feedbackList.size()) {
+            FeedBack feedback = feedbackList.get(index);
+            feedback.setOpettajanVastaus(vastaus);
+            System.out.println("Vastaus lisätty palautteeseen " + (index + 1) + ": " + vastaus);
         } else {
             System.out.println("Virhe: Indeksi ei kelpaa.");
         }
@@ -44,12 +56,24 @@ public class Kurssi {
     }
 
     // Getter palautteiden listalle
-    public List<String> getFeedbackList() {
+    public List<FeedBack> getFeedbackList() {
         return feedbackList;
     }
 
     // Palautetaan kurssin nimi
     public String getNimi() {
         return nimi;
+    }
+
+    // Haetaan opiskelijan palautteet
+    public List<FeedBack> getStudentFeedback(String opiskelijanNimi) {
+        List<FeedBack> studentFeedbacks = new ArrayList<>();
+        for (FeedBack feedback : feedbackList) {
+            // Oletetaan, että palaute on yhdistetty opiskelijan nimeen
+            // Tarvitaan myös, että opiskelijan nimi olisi tallennettuna palautteessa
+            // Muutetaan tämä, jos opiskelijan nimi on osa palautetta
+            studentFeedbacks.add(feedback);
+        }
+        return studentFeedbacks;
     }
 }

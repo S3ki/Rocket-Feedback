@@ -1,7 +1,5 @@
 package Model;
 
-import Model.Kurssi;
-
 import java.util.Scanner;
 
 public class Main {
@@ -27,12 +25,15 @@ public class Main {
                 case 1:
                     System.out.print("Syötä palaute: ");
                     input = scanner.nextLine();
-                    kurssi.addFeedback(input);1
+                    System.out.print("Syötä palautteen tekijän nimi: ");
+                    String opiskelijanNimi = scanner.nextLine();
+                    kurssi.addFeedback(input, opiskelijanNimi);
                     break;
                 case 2:
                     kurssi.printFeedback();
                     System.out.print("Anna poistettavan palautteen numero: ");
                     int index = scanner.nextInt();
+                    scanner.nextLine(); // Tyhjennä skannerin rivinluku
                     kurssi.removeFeedback(index - 1);  // Indeksi alkaa 0:sta
                     break;
                 case 3:

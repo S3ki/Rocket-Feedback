@@ -1,5 +1,6 @@
 package utils;
 
+import Model.FeedBack;
 import Model.Kurssi;
 
 import java.util.List;
@@ -8,14 +9,15 @@ public class Tilastot {
 
     // Analysoi positiiviset ja negatiiviset palautteet
     public static void analysoiPalautteet(Kurssi kurssi) {
-        List<String> palautteet = kurssi.getFeedbackList();
+        List<FeedBack> palautteet = kurssi.getFeedbackList();
         int positiiviset = 0;
         int negatiiviset = 0;
 
-        for (String palaute : palautteet) {
-            if (palaute.toLowerCase().contains("hyvä") || palaute.toLowerCase().contains("kiitos")) {
+        for (FeedBack palaute : palautteet) {
+            String palauteTeksti = palaute.getFeedbackText().toLowerCase();
+            if (palauteTeksti.contains("hyvä") || palauteTeksti.contains("kiitos")) {
                 positiiviset++;
-            } else if (palaute.toLowerCase().contains("huono") || palaute.toLowerCase().contains("valitus")) {
+            } else if (palauteTeksti.contains("huono") || palauteTeksti.contains("valitus")) {
                 negatiiviset++;
             }
         }
@@ -24,4 +26,3 @@ public class Tilastot {
         System.out.println("Negatiivisten palautteiden määrä: " + negatiiviset);
     }
 }
-

@@ -2,7 +2,7 @@ package Model;
 
 public class FeedBack {
     private String feedbackText;
-    private String opettajanVastaus; // Uusi kenttä vastaukselle
+    private String opettajanVastaus; // Opettajan vastaus
 
     // Konstruktori
     public FeedBack(String feedbackText) {
