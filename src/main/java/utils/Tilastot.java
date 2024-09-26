@@ -14,7 +14,7 @@ public class Tilastot {
         int negatiiviset = 0;
 
         for (FeedBack palaute : palautteet) {
-            String palauteTeksti = palaute.getFeedbackText().toLowerCase();
+            String palauteTeksti = palaute.getPalaute().toLowerCase(); // Muutettu tästä
             if (palauteTeksti.contains("hyvä") || palauteTeksti.contains("kiitos")) {
                 positiiviset++;
             } else if (palauteTeksti.contains("huono") || palauteTeksti.contains("valitus")) {
