@@ -7,6 +7,7 @@ public class Kayttaja {
     public Kayttaja(String nimi, String rooli) {
         this.nimi = nimi;
         this.rooli = rooli;
+
     }
 
     public String getNimi() {
