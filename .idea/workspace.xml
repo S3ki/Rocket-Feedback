@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-<<<<<<< HEAD
     <list default="true" id="9e1126b8-91c6-43fd-bde3-8e4675f096ca" name="Changes" comment="Database" />
-=======
     <list default="true" id="118cee9e-9a4e-4f7c-9496-b2531301c7be" name="Changes" comment="Database">
       <change afterPath="$PROJECT_DIR$/src/main/java/Gui/OpettajanToiminnot.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
@@ -27,13 +25,11 @@
       <change beforePath="$PROJECT_DIR$/src/main/resources/palautusjärjestelmä.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/palautusjärjestelmä.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/KurssiTest.java" beforeDir="false" />
     </list>
->>>>>>> origin/Sakariye
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-<<<<<<< HEAD
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -43,100 +39,7 @@
     &quot;git-widget-placeholder&quot;: &quot;Muha&quot;
   }
 }</component>
-  <component name="RunManager">
-=======
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
-  <component name="Git.Settings">
-    <option name="RECENT_BRANCH_BY_REPOSITORY">
-      <map>
-        <entry key="$PROJECT_DIR$" value="Sakariye" />
-      </map>
-    </option>
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 0
-}</component>
-  <component name="ProjectId" id="2m0M1Snm2ZA2TcBa3nP7fXsEa8b" />
-  <component name="ProjectViewState">
-    <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showLibraryContents" value="true" />
-  </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.FeedbackAppGUI.executor": "Run",
-    "Application.HelloWorld.executor": "Run",
-    "Application.main.executor": "Run",
-    "Application.main2.executor": "Run",
-    "JUnit.All in RocketFeed (1).executor": "Run",
-    "JUnit.All in RocketFeed.executor": "Coverage",
-    "JUnit.KurssiTest.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "Sakariye",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "vue.rearranger.settings.migration": "true"
-  },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mariadb"
-    ]
-  }
-}]]></component>
   <component name="RunManager" selected="Application.main2">
-    <configuration name="FeedbackAppGUI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Gui.FeedbackAppGUI" />
-      <module name="RocketFeed" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Gui.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="HelloWorld" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Gui.HelloWorld" />
-      <module name="RocketFeed" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Gui.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Gui.main" />
-      <module name="RocketFeed" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Gui.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
->>>>>>> origin/Sakariye
     <configuration name="main2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Gui.main2" />
       <module name="RocketFeed" />
@@ -150,17 +53,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-<<<<<<< HEAD
-    <recent_temporary>
-      <list>
-        <item itemvalue="Application.main2" />
-      </list>
-    </recent_temporary>
-  </component>
-  <component name="TaskManager">
-    <servers />
-  </component>
-=======
     <configuration name="All in RocketFeed (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="RocketFeed" />
       <option name="PACKAGE_NAME" value="" />
@@ -172,9 +64,6 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.main2" />
-        <item itemvalue="Application.main" />
-        <item itemvalue="Application.FeedbackAppGUI" />
-        <item itemvalue="Application.HelloWorld" />
         <item itemvalue="JUnit.All in RocketFeed (1)" />
       </list>
     </recent_temporary>
@@ -206,15 +95,11 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
->>>>>>> origin/Sakariye
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Database" />
     <option name="LAST_COMMIT_MESSAGE" value="Database" />
   </component>
-<<<<<<< HEAD
-=======
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/RocketFeed$All_in_RocketFeed.ic" NAME="All in RocketFeed Coverage Results" MODIFIED="1726813558562" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
->>>>>>> origin/Sakariye
 </project>
