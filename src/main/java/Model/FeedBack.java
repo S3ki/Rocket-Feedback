@@ -2,9 +2,8 @@ package Model;
 
 public class FeedBack {
     private String palaute;
-    private String[] colorPalaute;
 
-    public FeedBack(String palaute, String opiskelijaNimi) {
+    public FeedBack(String palaute) {
         this.palaute = palaute;
     }
 

@@ -6,11 +6,11 @@
 <?import javafx.scene.text.Text?>
 
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Palautusjärjestelmä">
+<AnchorPane fx:id="opettajanToimminotPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Gui.OpettajanToiminnot">
    <children>
-      <Button layoutX="37.0" layoutY="65.0" mnemonicParsing="false" text="Kurssi-Näytä palaute" />
+      <Button fx:id="loadkurssitbutton" onAction="#loadthem" layoutX="37.0" layoutY="65.0" mnemonicParsing="false" text="Kurssi-Näytä palaute" />
       <Button layoutX="40.0" layoutY="121.0" mnemonicParsing="false" text="Poista kurssi" />
-      <Button layoutX="37.0" layoutY="200.0" mnemonicParsing="false" text="Takaisin" />
+      <Button fx:id="takaisinButton" onAction="#takaisin" layoutX="37.0" layoutY="200.0" mnemonicParsing="false" text="Takaisin" />
       <Text layoutX="40.0" layoutY="187.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Kurssit:">
          <font>
             <Font size="15.0" />

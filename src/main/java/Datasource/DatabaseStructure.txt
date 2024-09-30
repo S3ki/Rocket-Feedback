@@ -1,0 +1,30 @@
+CREATE TABLE Teacher
+(
+  teacher_ID INT NOT NULL AUTO_INCREMENT,
+  first_name VARCHAR(50) NOT NULL,
+  last_name VARCHAR(50) NOT NULL,
+  email VARCHAR(50) NOT NULL,
+  PRIMARY KEY (teacher_ID)
+);
+
+CREATE TABLE CourseFeedback
+(
+  Course_ID INT NOT NULL AUTO_INCREMENT,
+  Date DATE NOT NULL,
+  teacher_ID INT NOT NULL,
+  PRIMARY KEY (Course_ID),
+  FOREIGN KEY (teacher_ID) REFERENCES Teacher(teacher_ID)
+);
+
+CREATE TABLE Feedback
+(
+  feedback_ID INT NOT NULL AUTO_INCREMENT,
+  Comment VARCHAR(300) NOT NULL,
+  SubmissionDate DATE NOT NULL,
+  Green BOOLEAN,
+  Yellow BOOLEAN,
+  Red BOOLEAN,
+  Course_ID INT NOT NULL,
+  PRIMARY KEY (feedback_ID),
+  FOREIGN KEY (Course_ID) REFERENCES CourseFeedback(Course_ID)
+);
