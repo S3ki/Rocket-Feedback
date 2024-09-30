@@ -4,7 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="118cee9e-9a4e-4f7c-9496-b2531301c7be" name="Changes" comment="Database" />
+    <list default="true" id="118cee9e-9a4e-4f7c-9496-b2531301c7be" name="Changes" comment="Database">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Gui/OpettajanToiminnot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Entity/Opettaja.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Entity/Opettaja.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Gui/FeedbackAppGUI.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Gui/Kirjaudu.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Gui/Login.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Gui/SceneGui.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Gui/SceneGui.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Gui/main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Model/FeedBack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/FeedBack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Model/Kurssi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Kurssi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Model/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/design.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/design.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/kirjaudu.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/kirjaudu.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/opettajanToiminnot.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/opettajanToiminnot.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/oppilaskurssit.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/oppilaskurssit.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/palautusjärjestelmä.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/palautusjärjestelmä.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/KurssiTest.java" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -38,12 +57,13 @@
     "Application.FeedbackAppGUI.executor": "Run",
     "Application.HelloWorld.executor": "Run",
     "Application.main.executor": "Run",
+    "Application.main2.executor": "Run",
     "JUnit.All in RocketFeed (1).executor": "Run",
     "JUnit.All in RocketFeed.executor": "Coverage",
     "JUnit.KurssiTest.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "Sakariye",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -60,7 +80,7 @@
     ]
   }
 }]]></component>
-  <component name="RunManager" selected="Application.main">
+  <component name="RunManager" selected="Application.main2">
     <configuration name="FeedbackAppGUI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Gui.FeedbackAppGUI" />
       <module name="RocketFeed" />
@@ -100,15 +120,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="All in RocketFeed (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="main2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Gui.main2" />
       <module name="RocketFeed" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="TEST_OBJECT" value="package" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Gui.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="All in RocketFeed" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="All in RocketFeed (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="RocketFeed" />
       <option name="PACKAGE_NAME" value="" />
       <option name="TEST_OBJECT" value="package" />
@@ -118,11 +143,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.main2" />
         <item itemvalue="Application.main" />
         <item itemvalue="Application.FeedbackAppGUI" />
         <item itemvalue="Application.HelloWorld" />
         <item itemvalue="JUnit.All in RocketFeed (1)" />
-        <item itemvalue="JUnit.All in RocketFeed" />
       </list>
     </recent_temporary>
   </component>

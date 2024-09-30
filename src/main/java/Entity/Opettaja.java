@@ -25,7 +25,7 @@ public class Opettaja {
     public Opettaja() {
     }
 
-    public Opettaja(String firstName, String lastName, String email, double salary) {
+    public Opettaja(String firstName, String lastName, String email) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
