@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="9e1126b8-91c6-43fd-bde3-8e4675f096ca" name="Changes" comment="Database" />
+    <list default="true" id="118cee9e-9a4e-4f7c-9496-b2531301c7be" name="Changes" comment="Database">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Gui/OpettajanToiminnot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Entity/Opettaja.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Entity/Opettaja.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Gui/FeedbackAppGUI.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Gui/Kirjaudu.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Gui/Login.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Gui/SceneGui.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Gui/SceneGui.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Gui/main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Model/FeedBack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/FeedBack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Model/Kurssi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Kurssi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Model/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/design.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/design.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/kirjaudu.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/kirjaudu.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/opettajanToiminnot.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/opettajanToiminnot.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/oppilaskurssit.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/oppilaskurssit.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/palautusjärjestelmä.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/palautusjärjestelmä.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/KurssiTest.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.main2.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Muha&quot;
+  }
+}</component>
+  <component name="RunManager" selected="Application.main2">
+    <configuration name="main2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Gui.main2" />
+      <module name="RocketFeed" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Gui.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="All in RocketFeed (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="RocketFeed" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.main2" />
+        <item itemvalue="JUnit.All in RocketFeed (1)" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="118cee9e-9a4e-4f7c-9496-b2531301c7be" name="Changes" comment="" />
+      <created>1726208827229</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1726208827229</updated>
+      <workItem from="1726208828322" duration="5973000" />
+      <workItem from="1726743460676" duration="10270000" />
+      <workItem from="1726824652609" duration="3549000" />
+      <workItem from="1727173720627" duration="4105000" />
+    </task>
+    <task id="LOCAL-00001" summary="Database">
+      <option name="closed" value="true" />
+      <created>1726824750622</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1726824750622</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Database" />
+    <option name="LAST_COMMIT_MESSAGE" value="Database" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/RocketFeed$All_in_RocketFeed.ic" NAME="All in RocketFeed Coverage Results" MODIFIED="1726813558562" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
+</project>

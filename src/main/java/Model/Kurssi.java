@@ -1,55 +1,41 @@
 package Model;
 
+import javafx.scene.control.Button;
+
 import java.util.ArrayList;
 import java.util.List;
 
 public class Kurssi {
     private String nimi;
+    private List<FeedBack> feedbackList;
 
-    // Lista palautteista
-    private List<String> feedbackList;
-
-    // Kurssin konstruktori
     public Kurssi(String nimi) {
         this.nimi = nimi;
         this.feedbackList = new ArrayList<>();
     }
 
-    // Lisää palautetta
-    public void addFeedback(String feedback) {
-        this.feedbackList.add(feedback);
-        System.out.println("Palaute lisätty: " + feedback);
+    public void addFeedback(String palaute) {
+        feedbackList.add(new FeedBack(palaute));
+    }
+    public List<FeedBack> getFeedbackList() {
+        return feedbackList;
     }
 
-    // Poista palaute indeksin mukaan
-    public void removeFeedback(int index) {
-        if (index >= 0 && index < feedbackList.size()) {
-            String removedFeedback = feedbackList.remove(index);
-            System.out.println("Palautetta poistettu: " + removedFeedback);
-        } else {
-            System.out.println("Virhe: Indeksi ei kelpaa.");
-        }
+    public String getNimi() {
+        return nimi;
     }
 
-    // Tulostetaan kaikki palautteet
-    public void printFeedback() {
+    public void printFeedback() { // Lisätty metodi
         if (feedbackList.isEmpty()) {
-            System.out.println("Ei palautetta.");
+            System.out.println("Ei palautteita.");
         } else {
-            System.out.println("Palaute kurssille " + nimi + ":");
             for (int i = 0; i < feedbackList.size(); i++) {
-                System.out.println((i + 1) + ". " + feedbackList.get(i));
+                FeedBack fb = feedbackList.get(i);
+                System.out.println((i + 1) + ". " + fb.toString());
             }
         }
     }
 
-    // Getter palautteiden listalle
-    public List<String> getFeedbackList() {
-        return feedbackList;
-    }
-
-    // Palautetaan kurssin nimi
-    public String getNimi() {
-        return nimi;
+    public void removeFeedback(int i) {
     }
 }
