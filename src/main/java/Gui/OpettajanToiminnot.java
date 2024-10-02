@@ -1,11 +1,13 @@
 package Gui;
 
 import Model.Kurssi;
+import Model.Opettaja;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -36,24 +38,34 @@ public class OpettajanToiminnot {
     @FXML
     private Button takaisinButton;
 
+    //Opettajan kurssit
     @FXML
     private AnchorPane opettajanToimminotPane;
     @FXML
     private Button loadkurssitbutton;
+    @FXML Button refreshSivuButton;
+    @FXML
+    private VBox nappiVbox;
 
-    static ArrayList<Kurssi> kurssit = new ArrayList<>();
+    public static ArrayList<Kurssi> kurssit = new ArrayList<>();
 
-
+    Opettaja opettaja = new Opettaja("Tero");
 
     @FXML
     void takaisin() {
         loadNextScene("/opettajantoiminnot.fxml", takaisinButton);
     }
 
+    // Lataa opettajan kurssit
+    @FXML
     public void showKurssit() {
         loadNextScene("/palautusjärjestelmä.fxml", kurssitButton );
     }
 
+    @FXML
+    public void refreshKurssit() {
+        loadNextScene("/palautusjärjestelmä.fxml", loadkurssitbutton);
+    }
 
     @FXML
     public void handleLogin() {
@@ -81,6 +93,7 @@ public class OpettajanToiminnot {
         result.ifPresent(courseName -> {
             Kurssi newCourse = new Kurssi(courseName);
             kurssit.add(newCourse);
+            opettaja.addOpettajalleKurssi(courseName, newCourse);
             System.out.println("Kurssi luotu: " + newCourse.getNimi());
             System.out.println("Kurssien määrä: " + kurssit.size());
             showAlert("Onnistui", "Kurssi luotu! " + newCourse.getNimi());
@@ -97,8 +110,8 @@ public class OpettajanToiminnot {
                 kurssit.remove(kurssi);
                 System.out.println("Kurssi poistettu: " + kurssi.getNimi());
             });
-            opettajanToimminotPane.getChildren().add(kurssiButton);
-            opettajanToimminotPane.getChildren().add(delete);
+            nappiVbox.getChildren().add(kurssiButton);
+            nappiVbox.getChildren().add(delete);
         }
     }
     private void handleButtonClick(Kurssi kurssi) {

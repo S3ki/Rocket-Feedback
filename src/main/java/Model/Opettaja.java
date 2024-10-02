@@ -5,46 +5,38 @@ import java.util.Map;
 
 public class Opettaja {
     private String nimi;
+    private String sposti;
+    private String salasana;
 
-    // Mappi, joka tallentaa palautteen ja opettajan vastauksen.
-    private Map<Integer, String> palautteenVastaukset;
+    private Map<String, Kurssi> opettajanKurssit;
+//    private Map<Integer, String> palautteenVastaukset;
 
-    // Konstruktori
     public Opettaja(String nimi) {
         this.nimi = nimi;
-        this.palautteenVastaukset = new HashMap<>();
+        this.opettajanKurssit = new HashMap<>();
+    }
+    public void addOpettajalleKurssi(String nimi, Kurssi kurssi) {
+        opettajanKurssit.put(nimi, kurssi);
     }
 
     // Palautteen tarkistaminen
-    public void tarkistaPalautteet(Kurssi kurssi) {
-        System.out.println("Model.Opettaja: " + nimi + " tarkistaa palautteet kurssilta: " + kurssi.getNimi());
-        kurssi.printFeedback();
-    }
+//    public void tarkistaPalautteet(Kurssi kurssi) {
+//        System.out.println("Model.Opettaja: " + nimi + " tarkistaa palautteet kurssilta: " + kurssi.getNimi());
+//        kurssi.printFeedback();
+//    }
 
-    // Vastaa palautteeseen
-    public void vastaaPalautteeseen(Kurssi kurssi, int palauteIndeksi, String vastaus) {
-        // Tarkistetaan, onko indeksi validi
-        if (palauteIndeksi > 0 && palauteIndeksi <= kurssi.getFeedbackList().size()) {
-            palautteenVastaukset.put(palauteIndeksi, vastaus);
-            System.out.println("Vastaus lisätty palautteeseen " + palauteIndeksi + ": " + vastaus);
-        } else {
-            System.out.println("Virhe: Indeksi ei kelpaa.");
-        }
-    }
+//    // Vastaa palautteeseen
+//    public void vastaaPalautteeseen(Kurssi kurssi, int palauteIndeksi, String vastaus) {
+//        // Tarkistetaan, onko indeksi validi
+//        if (palauteIndeksi > 0 && palauteIndeksi <= kurssi.getFeedbackList().size()) {
+//            palautteenVastaukset.put(palauteIndeksi, vastaus);
+//            System.out.println("Vastaus lisätty palautteeseen " + palauteIndeksi + ": " + vastaus);
+//        } else {
+//            System.out.println("Virhe: Indeksi ei kelpaa.");
+//        }
+//    }
 
-    // Näytä kaikki vastaukset
-    public void naytaVastaukset() {
-        if (palautteenVastaukset.isEmpty()) {
-            System.out.println("Ei vastauksia palautteisiin.");
-        } else {
-            System.out.println("Opettajan vastaukset:");
-            for (Map.Entry<Integer, String> entry : palautteenVastaukset.entrySet()) {
-                System.out.println("Palaute nro " + entry.getKey() + ": " + entry.getValue());
-            }
-        }
-    }
-
-    // Palauttaa opettajan nimen
+    // Näytä kaikki vastimen
     public String getNimi() {
         return nimi;
     }
