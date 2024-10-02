@@ -4,16 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="118cee9e-9a4e-4f7c-9496-b2531301c7be" name="Changes" comment="Database">
+    <list default="true" id="118cee9e-9a4e-4f7c-9496-b2531301c7be" name="Changes" comment="Napit latautuvat nyt">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_20_9_2024,_7_20_[Changes]/shelved.patch" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Gui/OpettajanToiminnot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Gui/OpettajanToiminnot.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Gui/OppilasToiminnot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Gui/OppilasToiminnot.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Model/Kayttaja.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Model/Kursseja.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Model/Kurssi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Kurssi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Model/Opettaja.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Opettaja.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/oppilaskurssit.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/oppilaskurssit.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/palautusjärjestelmä.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/palautusjärjestelmä.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/oppilaspalaute.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/oppilaspalaute.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -154,6 +149,7 @@
       <workItem from="1726743460676" duration="10270000" />
       <workItem from="1726824652609" duration="3549000" />
       <workItem from="1727173720627" duration="4105000" />
+      <workItem from="1727863305238" duration="1627000" />
     </task>
     <task id="LOCAL-00001" summary="Database">
       <option name="closed" value="true" />
@@ -163,7 +159,15 @@
       <option name="project" value="LOCAL" />
       <updated>1726824750622</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Napit latautuvat nyt">
+      <option name="closed" value="true" />
+      <created>1727827444488</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1727827444488</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -171,7 +175,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Database" />
-    <option name="LAST_COMMIT_MESSAGE" value="Database" />
+    <MESSAGE value="Napit latautuvat nyt" />
+    <option name="LAST_COMMIT_MESSAGE" value="Napit latautuvat nyt" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/RocketFeed$All_in_RocketFeed.ic" NAME="All in RocketFeed Coverage Results" MODIFIED="1726813558562" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />

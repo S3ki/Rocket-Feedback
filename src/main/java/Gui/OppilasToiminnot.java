@@ -15,6 +15,7 @@ import java.io.IOException;
 public class OppilasToiminnot {
 
 
+    // Kurssit sivut
     @FXML
     private Button takaisinButton;
 
@@ -24,6 +25,10 @@ public class OppilasToiminnot {
     Button refreshSivuButton;
     @FXML
     Button kurssitLoadButton;
+
+    @FXML
+    Button lahetaPalauteButton;
+
 
     @FXML
     void seeKurssit() {
@@ -39,11 +44,15 @@ public class OppilasToiminnot {
         for (Kurssi kurssi : OpettajanToiminnot.kurssit) {
             Button kurssiButton = new Button(kurssi.getNimi());
             kurssiButton.setOnAction(event -> {
-                System.out.println("Kurssi valittu: " + kurssi.getNimi());
+                loadOikeaKurssi(kurssiButton);
             });
 
             nappiVbox.getChildren().add(kurssiButton);
         }
+    }
+
+    void loadOikeaKurssi(Button sourceButton) {
+        loadNextScene("/oppilaspalaute.fxml", sourceButton);
     }
 
     private void loadNextScene(String fxmlFile, Button sourceButton) {
