@@ -1,0 +1,69 @@
+Index: src/main/java/Gui/FeedbackAppGUI.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package Gui;\n\nimport Model.Kayttaja;\nimport Model.Kurssi;\nimport Model.Opettaja;\nimport javafx.application.Application;\nimport javafx.scene.Scene;\nimport javafx.scene.control.Button;\nimport javafx.scene.control.Label;\nimport javafx.scene.control.TextArea;\nimport javafx.scene.control.TextField;\nimport javafx.scene.layout.VBox;\nimport javafx.stage.Stage;\n\npublic class FeedbackAppGUI extends Application {\n\n    Kurssi kurssi = new Kurssi(\"Ohjelmointi 101\");\n    Opettaja opettaja = new Opettaja(\"Mr. Smith\");\n    Kayttaja kayttaja;\n\n    @Override\n    public void start(Stage primaryStage) {\n        primaryStage.setTitle(\"Palautejärjestelmä rooleilla\");\n\n        Label welcomeLabel = new Label(\"Tervetuloa, kirjaudu sisään\");\n        TextField nameInput = new TextField();\n        nameInput.setPromptText(\"Syötä nimesi\");\n\n        TextField roleInput = new TextField();\n        roleInput.setPromptText(\"Syötä roolisi (opiskelija/opettaja)\");\n\n        Button loginButton = new Button(\"Kirjaudu\");\n        loginButton.setOnAction(e -> {\n            String nimi = nameInput.getText();\n            String rooli = roleInput.getText();\n\n            if (!nimi.isEmpty() && (rooli.equals(\"opiskelija\") || rooli.equals(\"opettaja\"))) {\n                kayttaja = new Kayttaja(nimi, rooli);\n                showMainMenu(primaryStage);\n            }\n        });\n\n        VBox layout = new VBox(10);\n        layout.getChildren().addAll(welcomeLabel, nameInput, roleInput, loginButton);\n\n        Scene scene = new Scene(layout, 400, 300);\n        primaryStage.setScene(scene);\n        primaryStage.show();\n    }\n\n    private void showMainMenu(Stage primaryStage) {\n        Label userLabel = new Label(\"Kirjautunut: \" + kayttaja.getNimi() + \" (\" + kayttaja.getRooli() + \")\");\n        TextArea feedbackInput = new TextArea();\n        feedbackInput.setPromptText(\"Kirjoita palautteesi tähän...\");\n\n        Button submitFeedback = new Button(\"Lähetä palaute\");\n        submitFeedback.setOnAction(e -> {\n            if (kayttaja.getRooli().equals(\"opiskelija\")) {\n                String palaute = feedbackInput.getText();\n                if (!palaute.isEmpty()) {\n                    kurssi.addFeedback(palaute);\n                    feedbackInput.clear();\n                }\n            }\n        });\n\n        Button viewFeedbacks = new Button(\"Näytä palautteet\");\n        viewFeedbacks.setOnAction(e -> kurssi.printFeedback());\n\n        Button answerFeedback = new Button(\"Vastaa palautteeseen\");\n        answerFeedback.setOnAction(e -> {\n            if (kayttaja.getRooli().equals(\"opettaja\")) {\n                // Opettajan toiminto vastata palautteeseen\n                kurssi.printFeedback();\n                // Tässä voit lisätä toiminnallisuuden vastausten antamiseen\n            }\n        });\n\n        VBox layout = new VBox(10);\n        layout.getChildren().addAll(userLabel, feedbackInput, submitFeedback, viewFeedbacks);\n\n        if (kayttaja.getRooli().equals(\"opettaja\")) {\n            layout.getChildren().add(answerFeedback);\n        }\n\n        Scene scene = new Scene(layout, 400, 300);\n        primaryStage.setScene(scene);\n    }\n\n    public static void main(String[] args) {\n        launch(args);\n    }\n}\n\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/Gui/FeedbackAppGUI.java b/src/main/java/Gui/FeedbackAppGUI.java
+--- a/src/main/java/Gui/FeedbackAppGUI.java	(revision 84c79e581ec48b79804fbdecfc0291bda5418de1)
++++ b/src/main/java/Gui/FeedbackAppGUI.java	(date 1726747043278)
+@@ -72,7 +72,6 @@
+             if (kayttaja.getRooli().equals("opettaja")) {
+                 // Opettajan toiminto vastata palautteeseen
+                 kurssi.printFeedback();
+-                // Tässä voit lisätä toiminnallisuuden vastausten antamiseen
+             }
+         });
+ 
+@@ -88,7 +87,7 @@
+     }
+ 
+     public static void main(String[] args) {
+-        launch(args);
++        FeedbackAppGUI.launch(args);
+     }
+ }
+ 
+Index: src/main/java/Model/Main.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package Model;\n\nimport Model.Kurssi;\n\nimport java.util.Scanner;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Luodaan uusi kurssi\n        Kurssi kurssi = new Kurssi(\"Ohjelmointi 101\");\n\n        // Simuloidaan palautteen lisäämistä ja poistamista\n        Scanner scanner = new Scanner(System.in);\n        String input;\n        int choice;\n\n        do {\n            System.out.println(\"\\nValitse toiminto:\");\n            System.out.println(\"1. Lisää palaute\");\n            System.out.println(\"2. Poista palaute\");\n            System.out.println(\"3. Näytä palautteet\");\n            System.out.println(\"4. Lopeta\");\n            choice = scanner.nextInt();\n            scanner.nextLine();  // Tyhjennä skannerin rivinluku\n\n            switch (choice) {\n                case 1:\n                    System.out.print(\"Syötä palaute: \");\n                    input = scanner.nextLine();\n                    kurssi.addFeedback(input);1\n                    break;\n                case 2:\n                    kurssi.printFeedback();\n                    System.out.print(\"Anna poistettavan palautteen numero: \");\n                    int index = scanner.nextInt();\n                    kurssi.removeFeedback(index - 1);  // Indeksi alkaa 0:sta\n                    break;\n                case 3:\n                    kurssi.printFeedback();\n                    break;\n                case 4:\n                    System.out.println(\"Ohjelma lopetetaan.\");\n                    break;\n                default:\n                    System.out.println(\"Virheellinen valinta, yritä uudelleen.\");\n            }\n\n        } while (choice != 4);\n\n        scanner.close();\n    }\n}\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/Model/Main.java b/src/main/java/Model/Main.java
+--- a/src/main/java/Model/Main.java	(revision 84c79e581ec48b79804fbdecfc0291bda5418de1)
++++ b/src/main/java/Model/Main.java	(date 1726746600319)
+@@ -27,7 +27,7 @@
+                 case 1:
+                     System.out.print("Syötä palaute: ");
+                     input = scanner.nextLine();
+-                    kurssi.addFeedback(input);1
++                    kurssi.addFeedback(input);
+                     break;
+                 case 2:
+                     kurssi.printFeedback();
+Index: pom.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project xmlns=\"http://maven.apache.org/POM/4.0.0\"\n         xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\n         xsi:schemaLocation=\"http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd\">\n    <modelVersion>4.0.0</modelVersion>\n\n    <groupId>org.example</groupId>\n    <artifactId>RocketFeed</artifactId>\n    <version>1.0-SNAPSHOT</version>\n\n    <properties>\n        <maven.compiler.source>17</maven.compiler.source>\n        <maven.compiler.target>17</maven.compiler.target>\n        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>\n    </properties>\n\n    <dependencies>\n        <dependency>\n            <groupId>org.openjfx</groupId>\n            <artifactId>javafx-controls</artifactId>\n            <version>17</version>\n        </dependency>\n    </dependencies>\n\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/pom.xml b/pom.xml
+--- a/pom.xml	(revision 84c79e581ec48b79804fbdecfc0291bda5418de1)
++++ b/pom.xml	(date 1726746701890)
+@@ -20,6 +20,11 @@
+             <artifactId>javafx-controls</artifactId>
+             <version>17</version>
+         </dependency>
++            <dependency> <groupId>org.openjfx</groupId> <artifactId>javafx</artifactId> <version>20.0.1</version> <type>pom</type> </dependency>
++            <dependency> <groupId>org.openjfx</groupId> <artifactId>javafx-graphics</artifactId> <version>20.0.1</version> </dependency>
++            <dependency> <groupId>org.openjfx</groupId> <artifactId>javafx-fxml</artifactId> <version>20.0.1</version> </dependency>
++            <dependency> <groupId>org.openjfx</groupId> <artifactId>javafx-controls</artifactId> <version>20.0.1</version> </dependency>
++
+     </dependencies>
+ 
+ </project>
+\ No newline at end of file

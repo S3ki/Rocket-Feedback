@@ -1,5 +1,7 @@
 package Model;
 
+import javafx.scene.control.Button;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -12,10 +14,9 @@ public class Kurssi {
         this.feedbackList = new ArrayList<>();
     }
 
-    public void addFeedback(String palaute, String opiskelijaNimi) {
-        feedbackList.add(new FeedBack(palaute, opiskelijaNimi));
+    public void addFeedback(String palaute) {
+        feedbackList.add(new FeedBack(palaute));
     }
-
     public List<FeedBack> getFeedbackList() {
         return feedbackList;
     }
