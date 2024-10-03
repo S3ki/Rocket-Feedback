@@ -79,7 +79,7 @@ public class OppilasToiminnot {
                 loadOikeaKurssi(kurssiButton);
                 asetaKurssi = kurssi;
             });
-
+            nappiVbox.setSpacing(10);
             nappiVbox.getChildren().add(kurssiButton);
         }
     }

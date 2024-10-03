@@ -20,7 +20,7 @@ CREATE TABLE Feedback
 (
   feedback_ID INT NOT NULL AUTO_INCREMENT,
   Comment VARCHAR(300) NOT NULL,
-  SubmissionDate DATE NOT NULL,
+  SubmissionDate DATE,
   Green BOOLEAN,
   Yellow BOOLEAN,
   Red BOOLEAN,
