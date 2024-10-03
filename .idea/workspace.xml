@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="118cee9e-9a4e-4f7c-9496-b2531301c7be" name="Changes" comment="Napit latautuvat nyt" />
+    <list default="true" id="118cee9e-9a4e-4f7c-9496-b2531301c7be" name="Changes" comment="Pikku fixejä.">
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Model/Opettaja.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Opettaja.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/OpettajaTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/OpettajaTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -46,6 +50,7 @@
     "JUnit.All in RocketFeed (1).executor": "Run",
     "JUnit.All in RocketFeed.executor": "Coverage",
     "JUnit.KurssiTest.executor": "Run",
+    "JUnit.OpettajaTest.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
@@ -65,33 +70,7 @@
     ]
   }
 }]]></component>
-  <component name="RunManager" selected="Application.main2">
-    <configuration name="HelloWorld" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Gui.HelloWorld" />
-      <module name="RocketFeed" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Gui.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Gui.main" />
-      <module name="RocketFeed" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Gui.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.KurssiTest">
     <configuration name="main2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Gui.main2" />
       <module name="RocketFeed" />
@@ -126,13 +105,31 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="KurssiTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="RocketFeed" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="KurssiTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OpettajaTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="RocketFeed" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="OpettajaTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.KurssiTest" />
+        <item itemvalue="JUnit.OpettajaTest" />
         <item itemvalue="Application.main2" />
         <item itemvalue="Application.mainDB" />
         <item itemvalue="JUnit.All in RocketFeed (1)" />
-        <item itemvalue="Application.main" />
-        <item itemvalue="Application.HelloWorld" />
       </list>
     </recent_temporary>
   </component>
@@ -167,7 +164,15 @@
       <option name="project" value="LOCAL" />
       <updated>1727827444488</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Pikku fixejä.">
+      <option name="closed" value="true" />
+      <created>1727998765505</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1727998765505</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -176,7 +181,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Napit latautuvat nyt" />
     <MESSAGE value="Database" />
-    <option name="LAST_COMMIT_MESSAGE" value="Database" />
+    <MESSAGE value="Pikku fixejä." />
+    <option name="LAST_COMMIT_MESSAGE" value="Pikku fixejä." />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/RocketFeed$All_in_RocketFeed.ic" NAME="All in RocketFeed Coverage Results" MODIFIED="1726813558562" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />

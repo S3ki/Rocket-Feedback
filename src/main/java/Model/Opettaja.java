@@ -19,22 +19,6 @@ public class Opettaja {
         opettajanKurssit.put(nimi, kurssi);
     }
 
-    // Palautteen tarkistaminen
-//    public void tarkistaPalautteet(Kurssi kurssi) {
-//        System.out.println("Model.Opettaja: " + nimi + " tarkistaa palautteet kurssilta: " + kurssi.getNimi());
-//        kurssi.printFeedback();
-//    }
-
-//    // Vastaa palautteeseen
-//    public void vastaaPalautteeseen(Kurssi kurssi, int palauteIndeksi, String vastaus) {
-//        // Tarkistetaan, onko indeksi validi
-//        if (palauteIndeksi > 0 && palauteIndeksi <= kurssi.getFeedbackList().size()) {
-//            palautteenVastaukset.put(palauteIndeksi, vastaus);
-//            System.out.println("Vastaus lisätty palautteeseen " + palauteIndeksi + ": " + vastaus);
-//        } else {
-//            System.out.println("Virhe: Indeksi ei kelpaa.");
-//        }
-//    }
 
     // Näytä kaikki vastimen
     public String getNimi() {
