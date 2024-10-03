@@ -1,5 +1,6 @@
 package Gui;
 
+import Model.FeedBack;
 import Model.Kurssi;
 import Model.Opettaja;
 import javafx.fxml.FXML;
@@ -7,7 +8,9 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
+import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -47,13 +50,26 @@ public class OpettajanToiminnot {
     @FXML
     private VBox nappiVbox;
 
+    // Oppilaiden palautteet sivut
+    @FXML
+    VBox palauteTextArea;
+    @FXML
+    Button lataaaPalautteetButton;
+    @FXML
+    Button takaisinPalautteistaButton;
+
     public static ArrayList<Kurssi> kurssit = new ArrayList<>();
 
+    static Kurssi asetaOikeaKurssi;
     Opettaja opettaja = new Opettaja("Tero");
 
     @FXML
     void takaisin() {
         loadNextScene("/opettajantoiminnot.fxml", takaisinButton);
+    }
+    @FXML
+    void takaisinP() {
+        loadNextScene("/palautusjärjestelmä.fxml", takaisinPalautteistaButton);
     }
 
     // Lataa opettajan kurssit
@@ -65,6 +81,10 @@ public class OpettajanToiminnot {
     @FXML
     public void refreshKurssit() {
         loadNextScene("/palautusjärjestelmä.fxml", loadkurssitbutton);
+    }
+
+    void loadOikeaKurssi(Button sourceButton) {
+        loadNextScene("/palaute.fxml", sourceButton);
     }
 
     @FXML
@@ -102,16 +122,27 @@ public class OpettajanToiminnot {
 
 
     void loadKurssitOpettajalle(){
+        nappiVbox.setSpacing(10);
         for (Kurssi kurssi : kurssit) {
             Button kurssiButton = new Button(kurssi.getNimi());
             Button delete = new Button("Poista");
-            kurssiButton.setOnAction(event -> handleButtonClick(kurssi));
+            kurssiButton.setOnAction(event -> {
+                loadOikeaKurssi(kurssiButton);
+                asetaOikeaKurssi = kurssi;
+            });
             delete.setOnAction(event -> {
                 kurssit.remove(kurssi);
                 System.out.println("Kurssi poistettu: " + kurssi.getNimi());
             });
-            nappiVbox.getChildren().add(kurssiButton);
-            nappiVbox.getChildren().add(delete);
+
+            HBox buttonGroup = new HBox(5); // Set spacing between the buttons in the group
+            buttonGroup.getChildren().addAll(kurssiButton, delete);
+
+            // Add the HBox to the VBox
+            nappiVbox.getChildren().add(buttonGroup);
+
+//            nappiVbox.getChildren().add(kurssiButton);
+//            nappiVbox.getChildren().add(delete);
         }
     }
     private void handleButtonClick(Kurssi kurssi) {
@@ -121,6 +152,14 @@ public class OpettajanToiminnot {
     @FXML
     void loadthem(){
         loadKurssitOpettajalle();
+    }
+    @FXML
+    void loadPalautteetOppilailta(){
+        for (FeedBack feedback : asetaOikeaKurssi.getFeedbackList()) {
+            Text feedbackText = new Text();
+            feedbackText.setText(feedback.getPalaute());
+            palauteTextArea.getChildren().add(feedbackText);
+        }
     }
 
     private void loadNextScene(String fxmlFile, Button sourceButton) {
