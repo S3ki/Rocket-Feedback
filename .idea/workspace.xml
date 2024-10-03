@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="118cee9e-9a4e-4f7c-9496-b2531301c7be" name="Changes" comment="Napit latautuvat nyt">
-      <change beforePath="$PROJECT_DIR$/src/main/java/Dao/OpettajaDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Dao/OpettajaDao.java" afterDir="false" />
-    </list>
+    <list default="true" id="118cee9e-9a4e-4f7c-9496-b2531301c7be" name="Changes" comment="Napit latautuvat nyt" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -27,6 +25,9 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="KubernetesApiProvider"><![CDATA[{
+  "isMigrated": true
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 0
 }</component>
@@ -47,7 +48,7 @@
     "JUnit.KurssiTest.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "Sakariye",
+    "git-widget-placeholder": "main",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -64,7 +65,7 @@
     ]
   }
 }]]></component>
-  <component name="RunManager" selected="Application.mainDB">
+  <component name="RunManager" selected="Application.main2">
     <configuration name="HelloWorld" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Gui.HelloWorld" />
       <module name="RocketFeed" />
@@ -127,8 +128,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.mainDB" />
         <item itemvalue="Application.main2" />
+        <item itemvalue="Application.mainDB" />
         <item itemvalue="JUnit.All in RocketFeed (1)" />
         <item itemvalue="Application.main" />
         <item itemvalue="Application.HelloWorld" />
