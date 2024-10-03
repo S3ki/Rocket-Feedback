@@ -1,16 +1,21 @@
 package Gui;
 
 import Model.Kurssi;
+import javafx.application.Platform;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.fxml.Initializable;
 import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
+import javafx.scene.control.TextArea;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.net.URL;
+import java.util.ResourceBundle;
 
 public class OppilasToiminnot {
 
@@ -26,18 +31,45 @@ public class OppilasToiminnot {
     @FXML
     Button kurssitLoadButton;
 
+    // Lähettää palaute sivu
     @FXML
     Button lahetaPalauteButton;
-
+    @FXML
+    Button takaisinLahetaPalauteButton;
+    @FXML
+    TextArea palauteTextArea;
 
     @FXML
     void seeKurssit() {
-        loadNextScene("/luoKurssi.fxml", takaisinButton);
+        loadNextScene("/oppilaskurssit.fxml", takaisinButton);
     }
     @FXML
     void takaisin() {
         loadNextScene("/design.fxml", takaisinButton);
     }
+    @FXML
+    void takaisinP(){
+        loadNextScene("/oppilaskurssit.fxml", takaisinLahetaPalauteButton);
+    }
+    @FXML
+    void takaisinLahetaPalaute() {
+        loadNextScene("/design.fxml", takaisinLahetaPalauteButton);
+    }
+
+    public static Kurssi asetaKurssi;
+    @FXML
+    void setLahetaPalauteButton(){
+        if (palauteTextArea.getText().isEmpty()) {
+            showAlert("Error", "Palaute ei voi olla tyhjä.");
+            return;
+        } else {
+            String palaute = palauteTextArea.getText();
+            asetaKurssi.addFeedback(palaute);
+            System.out.println("Palaute lähetetty kurssiin: " + asetaKurssi.getNimi() + " Palaute: " + palaute);
+        }
+    }
+
+
 
     @FXML
     void loadKurssitOpiskelija(){
@@ -45,6 +77,7 @@ public class OppilasToiminnot {
             Button kurssiButton = new Button(kurssi.getNimi());
             kurssiButton.setOnAction(event -> {
                 loadOikeaKurssi(kurssiButton);
+                asetaKurssi = kurssi;
             });
 
             nappiVbox.getChildren().add(kurssiButton);

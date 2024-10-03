@@ -5,10 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="118cee9e-9a4e-4f7c-9496-b2531301c7be" name="Changes" comment="Napit latautuvat nyt">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_20_9_2024,_7_20_[Changes]/shelved.patch" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Gui/OpettajanToiminnot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Gui/OpettajanToiminnot.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Gui/OppilasToiminnot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Gui/OppilasToiminnot.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/oppilaspalaute.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/oppilaspalaute.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/palaute.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/palaute.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,7 +26,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="Sakariye" />
+        <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -130,10 +131,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.main2" />
-        <item itemvalue="Application.main" />
-        <item itemvalue="Application.FeedbackAppGUI" />
-        <item itemvalue="Application.HelloWorld" />
         <item itemvalue="JUnit.All in RocketFeed (1)" />
+        <item itemvalue="Application.main" />
+        <item itemvalue="Application.HelloWorld" />
+        <item itemvalue="Application.FeedbackAppGUI" />
       </list>
     </recent_temporary>
   </component>
@@ -150,6 +151,7 @@
       <workItem from="1726824652609" duration="3549000" />
       <workItem from="1727173720627" duration="4105000" />
       <workItem from="1727863305238" duration="1627000" />
+      <workItem from="1727981931985" duration="7616000" />
     </task>
     <task id="LOCAL-00001" summary="Database">
       <option name="closed" value="true" />
@@ -174,9 +176,9 @@
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Database" />
     <MESSAGE value="Napit latautuvat nyt" />
-    <option name="LAST_COMMIT_MESSAGE" value="Napit latautuvat nyt" />
+    <MESSAGE value="Database" />
+    <option name="LAST_COMMIT_MESSAGE" value="Database" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/RocketFeed$All_in_RocketFeed.ic" NAME="All in RocketFeed Coverage Results" MODIFIED="1726813558562" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
