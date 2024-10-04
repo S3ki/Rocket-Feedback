@@ -11,10 +11,11 @@ public class OpettajaDao {
         em.persist(opEmp);
         em.getTransaction().commit();
     }
-    public void find (int id){
+    public Opettaja find (int id){
         EntityManager em = Datasource.MariaDbJpaConnection.getInstance();
         Opettaja opEmp = em.find(Opettaja.class, id);
         System.out.println(opEmp.getFirstName() + " " + opEmp.getLastName());
+        return opEmp;
     }
 
     public void update(Opettaja opEmp){
