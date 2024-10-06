@@ -112,6 +112,7 @@ public class OpettajanToiminnot {
         Optional<String> result = dialog.showAndWait();
         result.ifPresent(courseName -> {
             Kurssi newCourse = new Kurssi(courseName);
+
             kurssit.add(newCourse);
             opettaja.addOpettajalleKurssi(courseName, newCourse);
             System.out.println("Kurssi luotu: " + newCourse.getNimi());
@@ -144,9 +145,6 @@ public class OpettajanToiminnot {
 //            nappiVbox.getChildren().add(kurssiButton);
 //            nappiVbox.getChildren().add(delete);
         }
-    }
-    private void handleButtonClick(Kurssi kurssi) {
-        System.out.println("Button clicked: " + kurssi.getNimi());
     }
 
     @FXML
