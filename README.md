@@ -8,4 +8,6 @@
 
 ##### Users in our target demographic, in this case meaning students, often struggle with voicing their opinions about lectures and courses. Whether these issues are about the learnt subject, teaching style or just a suggestion for improvement etc. students would greatly benefit from having a safe anonymous avenue where to express their concerns and opinions.
 
+### Benefit:
 
+##### Our goal is to bridge the gap between students and teachers when it comes to communication. We  want to create a low threshold for students to communicate with their teachers in order to make the learning experience more positive and rewarding. 
