@@ -23,3 +23,25 @@
 ```bash 
 git clone https://github.com/S3ki/Rocket-Feedback
 ```
+
+#### 2. Install dependencies:
+```bash
+npm install
+```
+
+#### 3. Start the application:
+```bash
+npm start
+```
+
+
+
+
+
+
+
+
+
+
+
+
