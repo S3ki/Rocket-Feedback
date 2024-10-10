@@ -26,4 +26,9 @@ public class Kurssi {
     }
 
 
+    public void removeFeedback(int i) {
+    }
+
+    public void printFeedback() {
+    }
 }

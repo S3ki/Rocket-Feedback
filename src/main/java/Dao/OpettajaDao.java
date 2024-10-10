@@ -2,9 +2,11 @@ package Dao;
 
 import Entity.Opettaja;
 import jakarta.persistence.EntityManager;
+import jakarta.persistence.EntityManagerFactory;
+import jakarta.persistence.Persistence;
 
 public class OpettajaDao {
-
+    private static EntityManagerFactory emf = Persistence.createEntityManagerFactory("RocketFeedPU");
     public void persist(Opettaja opEmp){
         EntityManager em = Datasource.MariaDbJpaConnection.getInstance();
         em.getTransaction().begin();
