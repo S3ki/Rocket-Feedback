@@ -10,13 +10,13 @@
 ##### Our goal is to bridge the gap between students and teachers when it comes to communication. We  want to create a low threshold for students to communicate with their teachers in order to make the learning experience more positive and rewarding. 
 
 ## Table of Contents
-- [Installation](#installation)
+- [Installation](##Installation)
 - [Features](#features)
 - [Installation](#installation)
 - [Usage](#usage)
 - [Contributing](#contributing)
 
-##Installation
+## Installation
 
 #### How to get started with the Rocket feedback:
 #### 1. Clone the github repository: 
