@@ -1,5 +1,7 @@
 # Rocket Feedback application
 
+#### This project has been built with JavaFX and uses Java as its programming language. 
+
 ### Vision:
 ##### This project is to produce an application where students can fill out a survey/feedback form. The project is made for university students to communicate their feedback and concerns to teachers. After each lesson the students will fill out a form about the lesson and send it to their course teacher.
 
@@ -24,16 +26,20 @@
 git clone https://github.com/S3ki/Rocket-Feedback
 ```
 
-#### 2. Install dependencies:
+#### 2. Run mvn clean in case you have previous builds:
 ```bash
-npm install
+mvn clean
 ```
 
-#### 3. Start the application:
+#### 3. Run mvn install:
 ```bash
-npm start
+mvn install
 ```
 
+#### 4. Run the application
+```bash
+mvn javafx:run
+```
 
 
 
