@@ -20,4 +20,6 @@
 
 #### How to get started with the Rocket feedback:
 #### 1. Clone the github repository: 
-#### ```bash git clone https://github.com/S3ki/Rocket-Feedback```
+```bash 
+git clone https://github.com/S3ki/Rocket-Feedback
+```
