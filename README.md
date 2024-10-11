@@ -21,6 +21,7 @@
 - [ER-Diagram](#ER-Diagram)
 - [Relational_Schema](#Relational_Schema)
 - [Activity_Model](#Activity_Model)
+- [UML](#UML)
 
 
 
@@ -139,6 +140,11 @@ mvn test
 ## Activity_Model
 
 ![picture of activity model](docResources/Activity.png)
+
+## UML
+
+![picture of UML]()
+
 
 
 
