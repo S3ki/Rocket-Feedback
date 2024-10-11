@@ -27,6 +27,6 @@
          </font>
       </Text>
       <Button fx:id="loginButton" layoutX="121.0" layoutY="313.0" mnemonicParsing="false" onAction="#handleLogin" prefHeight="46.0" prefWidth="121.0" text="Kirjaudu" />
-      <Button layoutX="312.0" layoutY="313.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="121.0" text="Takaisin" />
+      <Button layoutX="312.0" layoutY="313.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="121.0" text="Takaisin" onAction="#handleTakaisin" fx:id="takaisinEtuButton" />
    </children>
 </AnchorPane>
