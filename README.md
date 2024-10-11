@@ -58,7 +58,7 @@ mvn javafx:run
 
 - This project features CSS styling
 
-## Technologies Used
+## Technologies
 
 - JavaFX: a software platform used to build rich client applications that run on desktop, mobile, and embedded systems.
 - Scene builder: a visual layout tool for designing user interfaces (UIs) in JavaFX.
