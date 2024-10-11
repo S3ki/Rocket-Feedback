@@ -127,4 +127,4 @@ mvn test
 
 ## ER-Diagram
 
-![picture of ER-Diagram](relative/path/to/image)
+![picture of ER-Diagram](docResources/Er-malli.png)
