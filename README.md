@@ -13,9 +13,9 @@
 
 ## Table of Contents
 - [Installation](#Installation)
-- [Features](#features)
-- [Installation](#installation)
-- [Usage](#usage)
+- [Usage](#Usage)
+- [Features](#Features)
+- [Technologies used](#Technologies_used)
 - [Contributing](#contributing)
 
 ## Installation
@@ -40,6 +40,26 @@ mvn install
 ```bash
 mvn javafx:run
 ```
+## Usage
+
+### Scenario 1. Student client
+#### In the case of a client that is a student leaving a feedback:
+- Open the application
+- Either sign in or create a new user
+- Once signed the user will be given a window where to choose from courses
+- Then the user will choose the desired course
+- The course feedback window will open
+- The user will write their feedback and submit it
+- Now the feedback will show on the teachers feedback feed
+
+## Features
+
+- This project features css styling
+
+## Technologies Used
+
+- JavaFX: a software platform used to build rich client applications that run on desktop, mobile, and embedded systems.
+- Scene builder: a visual layout tool for designing user interfaces (UIs) in JavaFX.
 
 
 
