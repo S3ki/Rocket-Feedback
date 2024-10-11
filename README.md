@@ -46,7 +46,7 @@ mvn javafx:run
 #### In the case of a client that is a student leaving a feedback:
 - Open the application
 - Either sign in or create a new user
-- Once signed the user will be given a window where to choose from courses
+- Once signed in, the user will be given a window where to choose a courses
 - Then the user will choose the desired course
 - The course feedback window will open
 - The user will write their feedback and submit it
@@ -65,11 +65,12 @@ mvn javafx:run
 
 #### If you would like to contribute to Rocket feedback here are the steps to do so:
 1. Fork the repository
-2. Create a new branch (git checkout -b feature/your-feature)
+2. Create a new branch `(git checkout -b feature/your-feature)`
 3. Make your changes
-4. Commit your changes (git commit -am 'Add some feature')
-5. Push to the branch (git push origin feature/your-feature)
+4. Commit your changes `(git commit -am 'Add some feature')`
+5. Push to the branch `(git push origin feature/your-feature)`
 6. Create a new Pull Request
+
 
 
 
