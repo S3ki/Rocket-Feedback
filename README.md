@@ -19,6 +19,7 @@
 - [Testing](#Testing)
 - [Project_Structure](#Project_Structure)
 - [ER-Diagram](#ER-Diagram)
+- [Relational_Schema](#Relational_Schema)
 
 
 
@@ -128,3 +129,17 @@ mvn test
 ## ER-Diagram
 
 ![picture of ER-Diagram](docResources/Er-malli.png)
+
+## Relational_Schema
+
+![picture of relational schema](docResources/Relaatiomalli.png)
+
+
+
+
+
+
+
+
+
+
