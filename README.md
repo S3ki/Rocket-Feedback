@@ -21,7 +21,7 @@
 - [ER-Diagram](#ER-Diagram)
 - [Relational_Schema](#Relational_Schema)
 - [Activity_Model](#Activity_Model)
-- [UML](#UML)
+- [Use_Case_Model](#Use_Case_Model)
 
 
 
@@ -141,9 +141,9 @@ mvn test
 
 ![picture of activity model](docResources/Activity.png)
 
-## UML
+## Use_Case_Model
 
-![picture of UML]()
+![picture of Use Case Model](docResources/Usecasemalli.png)
 
 
 
