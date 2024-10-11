@@ -18,6 +18,8 @@
 - [Technologies](#Technologies)
 - [Contributing](#Contributing)
 - [Testing](#Testing)
+- [Project_Structure](#Project_Structure)
+
 
 
 ## Installation
@@ -81,7 +83,7 @@ mvn javafx:run
 ```bash
 mvn test
 ```
-## Project Structure
+## Project_Structure
 
 1. Backend:
    - src/main/java/Dao/
@@ -122,37 +124,5 @@ mvn test
 
 3. .gitignore
    - Specifies files and directories to be excluded from version control. 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
