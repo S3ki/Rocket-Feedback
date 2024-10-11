@@ -16,7 +16,9 @@
 - [Usage](#Usage)
 - [Features](#Features)
 - [Technologies used](#Technologies_used)
-- [Contributing](#contributing)
+- [Contributing](#Contributing)
+- [Testing](#Testing)
+
 
 ## Installation
 
@@ -60,6 +62,8 @@ mvn javafx:run
 
 - JavaFX: a software platform used to build rich client applications that run on desktop, mobile, and embedded systems.
 - Scene builder: a visual layout tool for designing user interfaces (UIs) in JavaFX.
+- JUnit: a popular unit testing framework for Java applications.
+- JaCoCo: (Java Code Coverage) is a popular code coverage library for Java projects.
 
 ## Contributing
 
@@ -70,6 +74,13 @@ mvn javafx:run
 4. Commit your changes `(git commit -am 'Add some feature')`
 5. Push to the branch `(git push origin feature/your-feature)`
 6. Create a new Pull Request
+
+## Testing
+
+#### To run tests navigate to your directory and run the following command:
+```bash
+mvn test
+```
 
 
 
