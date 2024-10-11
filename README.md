@@ -83,22 +83,15 @@ mvn test
 ```
 ## Project Structure
 
-1. Backend:src/main/java/Dao/
-OpettajaDao.java: Handles database operations related to "Opettaja" (Teacher).
-src/main/java/Datasource/
-MariaDbJpaConnection.java: Manages the connection to the MariaDB database using JPA.
-DatabaseStructure.txt: Defines the structure and schema of the database.
-src/main/java/Entity/
-Feedback.java: Represents the feedback entity (data model).
-Kurssi.java: Represents the course entity.
-Opettaja.java: Represents the teacher entity.
-src/main/java/Model/
-FeedBack.java: Core model for feedback functionality.
-Kurssi.java: Model for course data.
-Opettaja.java: Model for teacher data.
-src/main/java/main2/
-OpettajanToiminnot.java: Backend logic for teacher functionalities.
-OppilasToiminnot.java: Backend logic for student functionalities.
+1. Backend:
+   - src/main/java/Dao/
+       - `OpettajaDao.java` Handles database operations related to "Opettaja".
+   - src/main/java/Datasource/
+       - `MariaDbJpaConnection.java` Manages the connection to the MariaDB database using JPA.
+       - `DatabaseStructure.java` Defines the structure and schema of the database.
+   - src/main/java/Entity/
+
+
 
 
 
