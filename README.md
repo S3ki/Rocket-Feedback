@@ -62,10 +62,12 @@ mvn javafx:run
 
 ## Technologies
 
-- JavaFX: a software platform used to build rich client applications that run on desktop, mobile, and embedded systems.
-- Scene builder: a visual layout tool for designing user interfaces (UIs) in JavaFX.
-- JUnit: a popular unit testing framework for Java applications.
-- JaCoCo: (Java Code Coverage) is a popular code coverage library for Java projects.
+- Java: a programming language
+- JavaFX: a software platform used to build rich client applications that run on desktop, mobile, and embedded systems
+- MariaDB: one of the most popular open source relational databases
+- Scene builder: a visual layout tool for designing user interfaces (UIs) in JavaFX
+- JUnit: a popular unit testing framework for Java applications
+- JaCoCo: (Java Code Coverage) is a popular code coverage library for Java projects
 
 ## Contributing
 
