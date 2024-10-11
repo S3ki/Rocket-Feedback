@@ -1,0 +1,16 @@
+/Users/seki/code/OTP1/RocketFeed/src/main/java/Dao/OpettajaDao.java
+/Users/seki/code/OTP1/RocketFeed/src/main/java/Dao/mainDB.java
+/Users/seki/code/OTP1/RocketFeed/src/main/java/Datasource/MariaDbJpaConnection.java
+/Users/seki/code/OTP1/RocketFeed/src/main/java/Entity/Feedback.java
+/Users/seki/code/OTP1/RocketFeed/src/main/java/Entity/Kurssi.java
+/Users/seki/code/OTP1/RocketFeed/src/main/java/Entity/Opettaja.java
+/Users/seki/code/OTP1/RocketFeed/src/main/java/Gui/FeedbackAppGUI.java
+/Users/seki/code/OTP1/RocketFeed/src/main/java/Gui/Kirjaudu.java
+/Users/seki/code/OTP1/RocketFeed/src/main/java/Gui/OpettajanToiminnot.java
+/Users/seki/code/OTP1/RocketFeed/src/main/java/Gui/OppilasToiminnot.java
+/Users/seki/code/OTP1/RocketFeed/src/main/java/Gui/SceneGui.java
+/Users/seki/code/OTP1/RocketFeed/src/main/java/Main.java
+/Users/seki/code/OTP1/RocketFeed/src/main/java/Model/FeedBack.java
+/Users/seki/code/OTP1/RocketFeed/src/main/java/Model/Kurssi.java
+/Users/seki/code/OTP1/RocketFeed/src/main/java/Model/Opettaja.java
+/Users/seki/code/OTP1/RocketFeed/src/main/java/utils/Tilastot.java

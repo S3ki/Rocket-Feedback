@@ -28,6 +28,8 @@ public class OpettajanToiminnot {
 
     @FXML
     private Button loginButton;
+    @FXML
+    private Button takaisinEtuButton;
 
     //Opettajan sivut
     @FXML
@@ -102,6 +104,9 @@ public class OpettajanToiminnot {
 
     public void handleLogOut() {
         loadNextScene("/design.fxml", logOutButton);
+    }
+    public void handleTakaisin() {
+        loadNextScene("/design.fxml", takaisinEtuButton);
     }
 
     @FXML
