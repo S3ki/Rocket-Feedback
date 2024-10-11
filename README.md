@@ -15,7 +15,7 @@
 - [Installation](#Installation)
 - [Usage](#Usage)
 - [Features](#Features)
-- [Technologies_used](#Technologies_used)
+- [Technologies](#Technologies)
 - [Contributing](#Contributing)
 - [Testing](#Testing)
 
