@@ -54,12 +54,23 @@ mvn javafx:run
 
 ## Features
 
-- This project features css styling
+- This project features CSS styling
 
 ## Technologies Used
 
 - JavaFX: a software platform used to build rich client applications that run on desktop, mobile, and embedded systems.
 - Scene builder: a visual layout tool for designing user interfaces (UIs) in JavaFX.
+
+## Contributing
+
+#### If you would like to contribute to Rocket feedback here are the steps to do so:
+1. Fork the repository
+2. Create a new branch (git checkout -b feature/your-feature)
+3. Make your changes
+4. Commit your changes (git commit -am 'Add some feature')
+5. Push to the branch (git push origin feature/your-feature)
+6. Create a new Pull Request
+
 
 
 
