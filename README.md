@@ -14,11 +14,12 @@
 ## Table of Contents
 - [Installation](#Installation)
 - [Usage](#Usage)
-- [Features](#Features)
 - [Technologies](#Technologies)
 - [Contributing](#Contributing)
 - [Testing](#Testing)
 - [Project_Structure](#Project_Structure)
+- [ER-Diagram](#ER-Diagram)
+
 
 
 
@@ -49,16 +50,12 @@ mvn javafx:run
 ### Scenario 1. Student client
 #### In the case of a client that is a student leaving a feedback:
 - Open the application
-- Either sign in or create a new user
-- Once signed in, the user will be given a window where to choose a courses
+- Students don't need to create a separate user they can just log in 
+- Once logged, the user will be given a window where to choose a courses
 - Then the user will choose the desired course
 - The course feedback window will open
 - The user will write their feedback and submit it
 - Now the feedback will show on the teachers feedback feed
-
-## Features
-
-- This project features CSS styling
 
 ## Technologies
 
@@ -128,4 +125,4 @@ mvn test
 3. .gitignore
    - Specifies files and directories to be excluded from version control. 
 
-
+## ER-Diagram
