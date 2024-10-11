@@ -22,6 +22,8 @@
 - [Relational_Schema](#Relational_Schema)
 - [Activity_Model](#Activity_Model)
 - [Use_Case_Model](#Use_Case_Model)
+- [Database_Structure](#Database_Structure)
+
 
 
 
@@ -145,7 +147,9 @@ mvn test
 
 ![picture of Use Case Model](docResources/Usecasemalli.png)
 
+## Database_Structure
 
+[Click here to see the database structure](src/main/java/Datasource/DatabaseStructure.txt)
 
 
 
