@@ -126,3 +126,5 @@ mvn test
    - Specifies files and directories to be excluded from version control. 
 
 ## ER-Diagram
+
+![picture of ER-Diagram](relative/path/to/image)
