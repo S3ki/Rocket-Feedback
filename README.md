@@ -68,6 +68,7 @@ mvn javafx:run
 - Scene builder: a visual layout tool for designing user interfaces (UIs) in JavaFX
 - JUnit: a popular unit testing framework for Java applications
 - JaCoCo: (Java Code Coverage) is a popular code coverage library for Java projects
+- Maven: a software project management and comprehension tool
 
 ## Contributing
 
