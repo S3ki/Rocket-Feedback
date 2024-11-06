@@ -12,6 +12,7 @@ import javafx.scene.control.Button;
 
 import java.awt.*;
 import java.io.IOException;
+import java.util.ResourceBundle;
 
 public class SceneGui extends Application {
 
@@ -23,7 +24,10 @@ public class SceneGui extends Application {
     @Override
     public void start(Stage stage) throws Exception {
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/design.fxml"));
+        fxmlLoader.setResources(ResourceBundle.getBundle("bundle_JP"));
+
         Parent root = fxmlLoader.load();
+
 
         stage.setScene(new Scene(root));
         stage.show();
