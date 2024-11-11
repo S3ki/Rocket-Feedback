@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>OpettajanToiminnot.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">RocketFeed</a> &gt; <a href="index.source.html" class="el_package">Gui</a> &gt; <span class="el_source">OpettajanToiminnot.java</span></div><h1>OpettajanToiminnot.java</h1><pre class="source lang-java linenums">package Gui;
+
+import Model.FeedBack;
+import Model.Kurssi;
+import Model.Opettaja;
+import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Scene;
+import javafx.scene.control.*;
+import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.HBox;
+import javafx.scene.layout.VBox;
+import javafx.scene.text.Text;
+import javafx.stage.Stage;
+
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Optional;
+
+<span class="nc" id="L20">public class OpettajanToiminnot {</span>
+
+    //Kirjautumissivu
+    @FXML
+    private TextField usernameField;
+
+    @FXML
+    private PasswordField passwordField;
+
+    @FXML
+    private Button loginButton;
+
+    //Opettajan sivut
+    @FXML
+    private Button logOutButton;
+    @FXML
+    private Button luoKurssiButton;
+
+    //Opettajant toimintosivu
+    @FXML
+    private Button kurssitButton;
+    @FXML
+    private Button takaisinButton;
+
+    //Opettajan kurssit
+    @FXML
+    private AnchorPane opettajanToimminotPane;
+    @FXML
+    private Button loadkurssitbutton;
+    @FXML Button refreshSivuButton;
+    @FXML
+    private VBox nappiVbox;
+
+    // Oppilaiden palautteet sivut
+    @FXML
+    VBox palauteTextArea;
+    @FXML
+    Button lataaaPalautteetButton;
+    @FXML
+    Button takaisinPalautteistaButton;
+
+<span class="nc" id="L61">    public static ArrayList&lt;Kurssi&gt; kurssit = new ArrayList&lt;&gt;();</span>
+
+    static Kurssi asetaOikeaKurssi;
+<span class="nc" id="L64">    Opettaja opettaja = new Opettaja(&quot;Tero&quot;);</span>
+
+    @FXML
+    void takaisin() {
+<span class="nc" id="L68">        loadNextScene(&quot;/opettajantoiminnot.fxml&quot;, takaisinButton);</span>
+<span class="nc" id="L69">    }</span>
+    @FXML
+    void takaisinP() {
+<span class="nc" id="L72">        loadNextScene(&quot;/palautusjärjestelmä.fxml&quot;, takaisinPalautteistaButton);</span>
+<span class="nc" id="L73">    }</span>
+
+    // Lataa opettajan kurssit
+    @FXML
+    public void showKurssit() {
+<span class="nc" id="L78">        loadNextScene(&quot;/palautusjärjestelmä.fxml&quot;, kurssitButton );</span>
+<span class="nc" id="L79">    }</span>
+
+    @FXML
+    public void refreshKurssit() {
+<span class="nc" id="L83">        loadNextScene(&quot;/palautusjärjestelmä.fxml&quot;, loadkurssitbutton);</span>
+<span class="nc" id="L84">    }</span>
+
+    void loadOikeaKurssi(Button sourceButton) {
+<span class="nc" id="L87">        loadNextScene(&quot;/palaute.fxml&quot;, sourceButton);</span>
+<span class="nc" id="L88">    }</span>
+
+    @FXML
+    public void handleLogin() {
+<span class="nc" id="L92">        String username = usernameField.getText();</span>
+<span class="nc" id="L93">        String password = passwordField.getText();</span>
+
+        // Simple login validation
+<span class="nc bnc" id="L96" title="All 4 branches missed.">        if (username.equals(&quot;admin&quot;) &amp;&amp; password.equals(&quot;password&quot;)) {</span>
+<span class="nc" id="L97">            loadNextScene(&quot;/opettajanToiminnot.fxml&quot;, loginButton);</span>
+        } else {
+<span class="nc" id="L99">            showAlert(&quot;Login Failed&quot;, &quot;Invalid username or password.&quot;);</span>
+        }
+<span class="nc" id="L101">    }</span>
+
+    public void handleLogOut() {
+<span class="nc" id="L104">        loadNextScene(&quot;/design.fxml&quot;, logOutButton);</span>
+<span class="nc" id="L105">    }</span>
+
+    @FXML
+    public void showModal() {
+<span class="nc" id="L109">        TextInputDialog dialog = new TextInputDialog();</span>
+<span class="nc" id="L110">        dialog.setTitle(&quot;Luo uusi kurssi&quot;);</span>
+<span class="nc" id="L111">        dialog.setHeaderText(&quot;Syötä kurssin nimi:&quot;);</span>
+<span class="nc" id="L112">        Optional&lt;String&gt; result = dialog.showAndWait();</span>
+<span class="nc" id="L113">        result.ifPresent(courseName -&gt; {</span>
+<span class="nc" id="L114">            Kurssi newCourse = new Kurssi(courseName);</span>
+<span class="nc" id="L115">            kurssit.add(newCourse);</span>
+<span class="nc" id="L116">            opettaja.addOpettajalleKurssi(courseName, newCourse);</span>
+<span class="nc" id="L117">            System.out.println(&quot;Kurssi luotu: &quot; + newCourse.getNimi());</span>
+<span class="nc" id="L118">            System.out.println(&quot;Kurssien määrä: &quot; + kurssit.size());</span>
+<span class="nc" id="L119">            showAlert(&quot;Onnistui&quot;, &quot;Kurssi luotu! &quot; + newCourse.getNimi());</span>
+<span class="nc" id="L120">        });</span>
+<span class="nc" id="L121">    }</span>
+
+
+    void loadKurssitOpettajalle(){
+<span class="nc" id="L125">        nappiVbox.setSpacing(10);</span>
+<span class="nc bnc" id="L126" title="All 2 branches missed.">        for (Kurssi kurssi : kurssit) {</span>
+<span class="nc" id="L127">            Button kurssiButton = new Button(kurssi.getNimi());</span>
+<span class="nc" id="L128">            Button delete = new Button(&quot;Poista&quot;);</span>
+<span class="nc" id="L129">            kurssiButton.setOnAction(event -&gt; {</span>
+<span class="nc" id="L130">                loadOikeaKurssi(kurssiButton);</span>
+<span class="nc" id="L131">                asetaOikeaKurssi = kurssi;</span>
+<span class="nc" id="L132">            });</span>
+<span class="nc" id="L133">            delete.setOnAction(event -&gt; {</span>
+<span class="nc" id="L134">                kurssit.remove(kurssi);</span>
+<span class="nc" id="L135">                System.out.println(&quot;Kurssi poistettu: &quot; + kurssi.getNimi());</span>
+<span class="nc" id="L136">            });</span>
+
+<span class="nc" id="L138">            HBox buttonGroup = new HBox(5); // Set spacing between the buttons in the group</span>
+<span class="nc" id="L139">            buttonGroup.getChildren().addAll(kurssiButton, delete);</span>
+
+            // Add the HBox to the VBox
+<span class="nc" id="L142">            nappiVbox.getChildren().add(buttonGroup);</span>
+
+//            nappiVbox.getChildren().add(kurssiButton);
+//            nappiVbox.getChildren().add(delete);
+<span class="nc" id="L146">        }</span>
+<span class="nc" id="L147">    }</span>
+    private void handleButtonClick(Kurssi kurssi) {
+<span class="nc" id="L149">        System.out.println(&quot;Button clicked: &quot; + kurssi.getNimi());</span>
+<span class="nc" id="L150">    }</span>
+
+    @FXML
+    void loadthem(){
+<span class="nc" id="L154">        loadKurssitOpettajalle();</span>
+<span class="nc" id="L155">    }</span>
+    @FXML
+    void loadPalautteetOppilailta(){
+<span class="nc bnc" id="L158" title="All 2 branches missed.">        for (FeedBack feedback : asetaOikeaKurssi.getFeedbackList()) {</span>
+<span class="nc" id="L159">            Text feedbackText = new Text();</span>
+<span class="nc" id="L160">            feedbackText.setText(feedback.getPalaute());</span>
+<span class="nc" id="L161">            palauteTextArea.getChildren().add(feedbackText);</span>
+<span class="nc" id="L162">        }</span>
+<span class="nc" id="L163">    }</span>
+
+    private void loadNextScene(String fxmlFile, Button sourceButton) {
+        try {
+
+<span class="nc" id="L168">            FXMLLoader loader = new FXMLLoader(getClass().getResource(fxmlFile));</span>
+<span class="nc" id="L169">            AnchorPane nextView = loader.load();</span>
+
+<span class="nc" id="L171">            Stage stage = (Stage) sourceButton.getScene().getWindow();</span>
+
+<span class="nc" id="L173">            Scene scene = new Scene(nextView);</span>
+<span class="nc" id="L174">            stage.setScene(scene);</span>
+<span class="nc" id="L175">            stage.show();</span>
+<span class="nc" id="L176">        } catch (IOException e) {</span>
+<span class="nc" id="L177">            e.printStackTrace();</span>
+<span class="nc" id="L178">            showAlert(&quot;Error&quot;, &quot;Failed to load the next scene.&quot;);</span>
+<span class="nc" id="L179">        }</span>
+<span class="nc" id="L180">    }</span>
+
+    private void showAlert(String title, String message) {
+<span class="nc" id="L183">        Alert alert = new Alert(Alert.AlertType.INFORMATION);</span>
+<span class="nc" id="L184">        alert.setTitle(title);</span>
+<span class="nc" id="L185">        alert.setHeaderText(null);</span>
+<span class="nc" id="L186">        alert.setContentText(message);</span>
+<span class="nc" id="L187">        alert.showAndWait();</span>
+<span class="nc" id="L188">    }</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.9.202303310957</span></div></body></html>

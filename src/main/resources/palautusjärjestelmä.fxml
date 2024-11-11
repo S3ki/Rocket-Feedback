@@ -7,7 +7,7 @@
 
 <AnchorPane fx:id="opettajanToimminotPane" prefHeight="400.0" prefWidth="600.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Gui.OpettajanToiminnot">
    <children>
-      <Button fx:id="loadkurssitbutton" layoutX="450.0" layoutY="312.0" mnemonicParsing="false" onAction="#loadthem" text="Näytä palautteet" />
+      <Button fx:id="loadkurssitbutton" layoutX="450.0" layoutY="312.0" mnemonicParsing="false" onAction="#loadthem" text="Näytä kurssit" />
       <Button fx:id="refreshSivuButton" layoutX="247.0" layoutY="312.0" mnemonicParsing="false" onAction="#refreshKurssit" prefHeight="26.0" prefWidth="107.0" text="Päivitä sivu" />
       <Button fx:id="takaisinButton" layoutX="40.0" layoutY="312.0" mnemonicParsing="false" onAction="#takaisin" text="Takaisin" />
       <Text layoutX="48.0" layoutY="77.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" text="Kurssit:">

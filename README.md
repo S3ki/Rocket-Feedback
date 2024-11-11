@@ -14,11 +14,17 @@
 ## Table of Contents
 - [Installation](#Installation)
 - [Usage](#Usage)
-- [Features](#Features)
 - [Technologies](#Technologies)
 - [Contributing](#Contributing)
 - [Testing](#Testing)
 - [Project_Structure](#Project_Structure)
+- [ER-Diagram](#ER-Diagram)
+- [Relational_Schema](#Relational_Schema)
+- [Activity_Model](#Activity_Model)
+- [Use_Case_Model](#Use_Case_Model)
+- [Database_Structure](#Database_Structure)
+
+
 
 
 
@@ -49,23 +55,22 @@ mvn javafx:run
 ### Scenario 1. Student client
 #### In the case of a client that is a student leaving a feedback:
 - Open the application
-- Either sign in or create a new user
-- Once signed in, the user will be given a window where to choose a courses
+- Students don't need to create a separate user they can just log in 
+- Once logged, the user will be given a window where to choose a courses
 - Then the user will choose the desired course
 - The course feedback window will open
 - The user will write their feedback and submit it
 - Now the feedback will show on the teachers feedback feed
 
-## Features
-
-- This project features CSS styling
-
 ## Technologies
 
-- JavaFX: a software platform used to build rich client applications that run on desktop, mobile, and embedded systems.
-- Scene builder: a visual layout tool for designing user interfaces (UIs) in JavaFX.
-- JUnit: a popular unit testing framework for Java applications.
-- JaCoCo: (Java Code Coverage) is a popular code coverage library for Java projects.
+- Java: a programming language
+- JavaFX: a software platform used to build rich client applications that run on desktop, mobile, and embedded systems
+- MariaDB: one of the most popular open source relational databases
+- Scene builder: a visual layout tool for designing user interfaces (UIs) in JavaFX
+- JUnit: a popular unit testing framework for Java applications
+- JaCoCo: (Java Code Coverage) is a popular code coverage library for Java projects
+- Maven: a software project management and comprehension tool
 
 ## Contributing
 
@@ -124,5 +129,30 @@ mvn test
 
 3. .gitignore
    - Specifies files and directories to be excluded from version control. 
+
+## ER-Diagram
+
+![picture of ER-Diagram](docResources/Er-malli.png)
+
+## Relational_Schema
+
+![picture of relational schema](docResources/Relaatiomalli.png)
+
+
+## Activity_Model
+
+![picture of activity model](docResources/Activity.png)
+
+## Use_Case_Model
+
+![picture of Use Case Model](docResources/Usecasemalli.png)
+
+## Database_Structure
+
+[Click here to see the database structure](src/main/java/Datasource/DatabaseStructure.txt)
+
+
+
+
 
 

@@ -28,6 +28,8 @@ public class OpettajanToiminnot {
 
     @FXML
     private Button loginButton;
+    @FXML
+    private Button takaisinEtuButton;
 
     //Opettajan sivut
     @FXML
@@ -103,6 +105,9 @@ public class OpettajanToiminnot {
     public void handleLogOut() {
         loadNextScene("/design.fxml", logOutButton);
     }
+    public void handleTakaisin() {
+        loadNextScene("/design.fxml", takaisinEtuButton);
+    }
 
     @FXML
     public void showModal() {
@@ -122,6 +127,10 @@ public class OpettajanToiminnot {
 
 
     void loadKurssitOpettajalle(){
+        Kurssi kurssi1 = new Kurssi("Biologia");
+        Kurssi kurssi2 = new Kurssi("Historia");
+        kurssit.add(kurssi1);
+        kurssit.add(kurssi2);
         nappiVbox.setSpacing(10);
         for (Kurssi kurssi : kurssit) {
             Button kurssiButton = new Button(kurssi.getNimi());

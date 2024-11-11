@@ -1,0 +1,15 @@
+Model/Kurssi.class
+Dao/mainDB.class
+Entity/Kurssi.class
+Gui/OppilasToiminnot.class
+utils/Tilastot.class
+Model/Opettaja.class
+Main.class
+Gui/OpettajanToiminnot.class
+Dao/OpettajaDao.class
+Gui/Kirjaudu.class
+Model/FeedBack.class
+Entity/Opettaja.class
+Datasource/MariaDbJpaConnection.class
+Entity/Feedback.class
+Gui/SceneGui.class
