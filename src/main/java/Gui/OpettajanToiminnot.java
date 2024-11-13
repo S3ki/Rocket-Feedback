@@ -127,6 +127,10 @@ public class OpettajanToiminnot {
 
 
     void loadKurssitOpettajalle(){
+        Kurssi kurssi1 = new Kurssi("Biologia");
+        Kurssi kurssi2 = new Kurssi("Historia");
+        kurssit.add(kurssi1);
+        kurssit.add(kurssi2);
         nappiVbox.setSpacing(10);
         for (Kurssi kurssi : kurssit) {
             Button kurssiButton = new Button(kurssi.getNimi());

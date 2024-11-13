@@ -24,4 +24,5 @@ public class Opettaja {
     public String getNimi() {
         return nimi;
     }
+
 }
