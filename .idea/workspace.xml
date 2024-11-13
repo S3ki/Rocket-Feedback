@@ -7,10 +7,102 @@
     <list default="true" id="118cee9e-9a4e-4f7c-9496-b2531301c7be" name="Changes" comment="Database">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Gui/OpettajanToiminnot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Gui/OpettajanToiminnot.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Dao/OpettajaDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Dao/OpettajaDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Gui/SceneGui.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Gui/SceneGui.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/design.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/design.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/RocketFeed.jar" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Gui/OpettajanToiminnot.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Gui/OpettajanToiminnot.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/META-INF/persistence.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Model/Kurssi.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Model/Kurssi.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Gui/SceneGui.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Gui/SceneGui.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/bundle_AR.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/bundle_AR.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/bundle_EN.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/bundle_EN.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/bundle_JP.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/bundle_JP.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/design.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/design.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/opettajanToiminnot.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/opettajanToiminnot.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/oppilaskurssit.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/oppilaskurssit.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/oppilaspalaute.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/oppilaspalaute.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/palaute.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/palaute.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/palautusjärjestelmä.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/palautusjärjestelmä.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/saapuneetpalautteet.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/saapuneetpalautteet.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jacoco.exec" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/original-RocketFeed.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/Dao/OpettajaDao.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/Dao/OpettajaDao.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/Dao/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/Dao/index.source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/Dao/mainDB.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/Dao/mainDB.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/Datasource/MariaDbJpaConnection.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/Datasource/MariaDbJpaConnection.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/Datasource/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/Datasource/index.source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/Entity/Feedback.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/Entity/Feedback.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/Entity/Kurssi.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/Entity/Kurssi.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/Entity/Opettaja.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/Entity/Opettaja.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/Entity/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/Entity/index.source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/Gui/Kirjaudu.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/Gui/Kirjaudu.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/Gui/OpettajanToiminnot.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/Gui/OpettajanToiminnot.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/Gui/OppilasToiminnot.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/Gui/OppilasToiminnot.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/Gui/SceneGui.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/Gui/SceneGui.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/Gui/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/Gui/index.source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/Model/FeedBack.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/Model/FeedBack.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/Model/Kurssi.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/Model/Kurssi.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/Model/Opettaja.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/Model/Opettaja.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/Model/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/Model/index.source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/default/Main.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/default/Main.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/default/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/default/index.source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco-resources/branchfc.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco-resources/branchnc.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco-resources/branchpc.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco-resources/bundle.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco-resources/class.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco-resources/down.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco-resources/greenbar.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco-resources/group.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco-resources/method.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco-resources/package.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco-resources/prettify.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco-resources/prettify.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco-resources/redbar.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco-resources/report.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco-resources/report.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco-resources/session.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco-resources/sort.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco-resources/sort.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco-resources/source.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco-resources/up.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco-sessions.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/utils/Tilastot.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/utils/Tilastot.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/utils/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/utils/index.source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/KurssiTest.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/OpettajaTest.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-KurssiTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-OpettajaTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/KurssiTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/OpettajaTest.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,7 +120,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="Muha" />
+        <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -62,7 +154,7 @@
     "JUnit.OpettajaTest.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "Localization",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -80,11 +172,14 @@
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Docker.Dockerfile">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="RocketFeed" />
@@ -138,13 +233,15 @@
       <method v="2" />
     </configuration>
     <configuration default="true" type="docker-deploy" factoryName="dockerfile" temporary="true">
-      <deployment type="dockerfile" />
+      <deployment type="dockerfile">
+        <settings />
+      </deployment>
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Docker.Dockerfile" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="Docker.Dockerfile" />
         <item itemvalue="Application.main2" />
         <item itemvalue="JUnit.KurssiTest" />
         <item itemvalue="JUnit.OpettajaTest" />

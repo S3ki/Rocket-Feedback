@@ -4,6 +4,7 @@ import javafx.application.Application;
 import javafx.fxml.FXML;
 import javafx.scene.Scene;
 import javafx.scene.Parent;
+import javafx.scene.control.ComboBox;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
@@ -21,14 +22,19 @@ public class SceneGui extends Application {
     @FXML
     Button loadOppilasViewButton;
 
+    @FXML
+    ComboBox<String> languageBox;
+
+    FXMLLoader fxmlLoader;
+
     @Override
     public void start(Stage stage) throws Exception {
-        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/design.fxml"));
+        fxmlLoader = new FXMLLoader(getClass().getResource("/design.fxml"));
         fxmlLoader.setResources(ResourceBundle.getBundle("bundle_JP"));
 
         Parent root = fxmlLoader.load();
 
-
+        stage.setTitle("RocketFeedback");
         stage.setScene(new Scene(root));
         stage.show();
     }
@@ -49,6 +55,7 @@ public class SceneGui extends Application {
             e.printStackTrace();
         }
     }
+
     @FXML
     public void loadOpiskelija() {
         try {
@@ -66,4 +73,24 @@ public class SceneGui extends Application {
         }
     }
 
+    @FXML
+    private void handleLanguageChange() {
+        String selectedLanguage = languageBox.getValue();
+
+        switch (selectedLanguage) {
+            case "English":
+
+                break;
+
+            case "Suomi":
+                break;
+
+            case "日本語":
+                break;
+
+            default:
+                break;
+        }
+
+    }
 }
