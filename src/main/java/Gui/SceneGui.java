@@ -28,7 +28,7 @@ public class SceneGui extends Application {
     @Override
     public void start(Stage stage) throws Exception {
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/design.fxml"));
-        fxmlLoader.setResources(ResourceBundle.getBundle("bundle_JP"));
+        fxmlLoader.setResources(ResourceBundle.getBundle("bundle_AR"));
 
         Parent root = fxmlLoader.load();
 
@@ -71,24 +71,27 @@ public class SceneGui extends Application {
         }
     }
 
-//    @FXML
-//    private void handleLanguageChange() {
-//        String selectedLanguage = languageBox.getValue();
-//
-//        switch (selectedLanguage) {
-//            case "English":
-//
-//                break;
-//
-//            case "Suomi":
-//                break;
-//
-//            case "日本語":
-//                break;
-//
-//            default:
-//                break;
-//        }
+    @FXML
+    private void handleLanguageChange() {
+        String selectedLanguage = languageBox.getValue();
 
- //   }
+        switch (selectedLanguage) {
+            case "English":
+
+                break;
+
+            case "Suomi":
+
+                break;
+
+            case "日本語":
+
+                break;
+
+            default:
+
+                break;
+        }
+
+    }
 }

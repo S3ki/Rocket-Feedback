@@ -4,9 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="118cee9e-9a4e-4f7c-9496-b2531301c7be" name="Changes" comment="Database">
+    <list default="true" id="118cee9e-9a4e-4f7c-9496-b2531301c7be" name="Changes" comment="localization fix">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Gui/OpettajanToiminnot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Gui/OpettajanToiminnot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Gui/OppilasToiminnot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Gui/OppilasToiminnot.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Gui/SceneGui.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Gui/SceneGui.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/bundle_AR.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/bundle_AR.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/bundle_JP.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/bundle_JP.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/design.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/design.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,42 +49,40 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.FeedbackAppGUI.executor&quot;: &quot;Run&quot;,
-    &quot;Application.HelloWorld.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;Application.main.executor&quot;: &quot;Run&quot;,
-    &quot;Application.main2.executor&quot;: &quot;Run&quot;,
-    &quot;Application.mainDB.executor&quot;: &quot;Run&quot;,
-    &quot;Docker.Dockerfile.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.All in RocketFeed (1).executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.All in RocketFeed.executor&quot;: &quot;Coverage&quot;,
-    &quot;JUnit.KurssiTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.OpettajaTest.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;Localization&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.FeedbackAppGUI.executor": "Run",
+    "Application.HelloWorld.executor": "Run",
+    "Application.Main.executor": "Run",
+    "Application.main.executor": "Run",
+    "Application.main2.executor": "Run",
+    "Application.mainDB.executor": "Run",
+    "Docker.Dockerfile.executor": "Run",
+    "JUnit.All in RocketFeed (1).executor": "Run",
+    "JUnit.All in RocketFeed.executor": "Coverage",
+    "JUnit.KurssiTest.executor": "Run",
+    "JUnit.OpettajaTest.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "Localization",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "File.Encoding",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mariadb&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mariadb"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/resources" />
-    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
     </key>
@@ -192,7 +196,23 @@
       <option name="project" value="LOCAL" />
       <updated>1727998765505</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="small Localization update">
+      <option name="closed" value="true" />
+      <created>1731570481815</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1731570481815</updated>
+    </task>
+    <task id="LOCAL-00005" summary="target file cleaned">
+      <option name="closed" value="true" />
+      <created>1731570568340</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1731570568340</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -202,7 +222,14 @@
     <MESSAGE value="Napit latautuvat nyt" />
     <MESSAGE value="Pikku fixejä." />
     <MESSAGE value="Database" />
-    <option name="LAST_COMMIT_MESSAGE" value="Database" />
+    <MESSAGE value="small Localization update" />
+    <MESSAGE value="target file cleaned" />
+    <MESSAGE value="localization fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="localization fix" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/RocketFeed$All_in_RocketFeed.ic" NAME="All in RocketFeed Coverage Results" MODIFIED="1726813558562" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />

@@ -92,6 +92,7 @@ public class OppilasToiminnot {
         try {
 
             FXMLLoader loader = new FXMLLoader(getClass().getResource(fxmlFile));
+            loader.setResources(ResourceBundle.getBundle("bundle_JP"));
             AnchorPane nextView = loader.load();
 
             Stage stage = (Stage) sourceButton.getScene().getWindow();

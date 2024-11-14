@@ -16,6 +16,7 @@ import javafx.stage.Stage;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Optional;
+import java.util.ResourceBundle;
 
 public class OpettajanToiminnot {
 
@@ -127,10 +128,6 @@ public class OpettajanToiminnot {
 
 
     void loadKurssitOpettajalle(){
-        Kurssi kurssi1 = new Kurssi("Biologia");
-        Kurssi kurssi2 = new Kurssi("Historia");
-        kurssit.add(kurssi1);
-        kurssit.add(kurssi2);
         nappiVbox.setSpacing(10);
         for (Kurssi kurssi : kurssit) {
             Button kurssiButton = new Button(kurssi.getNimi());
@@ -175,6 +172,7 @@ public class OpettajanToiminnot {
         try {
 
             FXMLLoader loader = new FXMLLoader(getClass().getResource(fxmlFile));
+            loader.setResources(ResourceBundle.getBundle("bundle_JP"));
             AnchorPane nextView = loader.load();
 
             Stage stage = (Stage) sourceButton.getScene().getWindow();
