@@ -172,7 +172,8 @@ public class OpettajanToiminnot {
         try {
 
             FXMLLoader loader = new FXMLLoader(getClass().getResource(fxmlFile));
-            loader.setResources(ResourceBundle.getBundle("bundle_JP"));
+            loader.setResources(SceneGui.bundle);
+
             AnchorPane nextView = loader.load();
 
             Stage stage = (Stage) sourceButton.getScene().getWindow();

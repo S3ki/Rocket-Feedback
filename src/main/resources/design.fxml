@@ -14,7 +14,7 @@
       <Button fx:id="loadKirjauduViewButton" layoutX="89.0" layoutY="184.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="141.0" text="%home.teacher" onAction="#loadKirjaudu" styleClass="button"/>
       <Text style="-fx-font-family: 'Arial';" layoutX="192.0" layoutY="90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="%home.login" textAlignment="CENTER" wrappingWidth="160.0" styleClass="heading">
       </Text>
-      <ComboBox fx:id="languageBox" layoutX="405.0" layoutY="340.0" prefWidth="150.0" value="Suomi">
+      <ComboBox fx:id="languageBox" onAction="#handleLanguageChange" layoutX="405.0" layoutY="340.0" prefWidth="150.0" value="Language">
          <items>
             <FXCollections fx:factory="observableArrayList">
                <String fx:value="Suomi"/>

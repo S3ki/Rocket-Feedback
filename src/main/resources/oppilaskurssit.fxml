@@ -6,10 +6,10 @@
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Gui.OppilasToiminnot">
    <children>
-      <Button layoutX="251.0" layoutY="301.0" mnemonicParsing="false" text="Päivitä sivu" />
-      <Button fx:id="takaisinButton" layoutX="50.0" layoutY="301.0" mnemonicParsing="false" onAction="#takaisin" text="Takaisin" />
-      <Text layoutX="43.0" layoutY="59.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="twentyFont" text="Valitse Kurssi:" />
-      <Button fx:id="kurssitLoadButton" layoutX="444.0" layoutY="301.0" mnemonicParsing="false" onAction="#loadKurssitOpiskelija" text="Lataa kurssit" />
+      <Button layoutX="251.0" layoutY="301.0" mnemonicParsing="false" text="%studentPage.refreshButton" />
+      <Button fx:id="takaisinButton" layoutX="50.0" layoutY="301.0" mnemonicParsing="false" onAction="#takaisin" text="%studentPage.backButton" />
+      <Text layoutX="43.0" layoutY="59.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="twentyFont" text="%studentPage.selectCourse" />
+      <Button fx:id="kurssitLoadButton" layoutX="444.0" layoutY="301.0" mnemonicParsing="false" onAction="#loadKurssitOpiskelija" text="%studentPage.loadCoursesButton" />
       <VBox fx:id="nappiVbox" layoutX="43.0" layoutY="71.0" prefHeight="200.0" prefWidth="188.0" />
    </children>
 </AnchorPane>

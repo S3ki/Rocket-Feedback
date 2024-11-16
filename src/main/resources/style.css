@@ -97,6 +97,10 @@
 .thirtyFont {
     -fx-font-size: 30;
 }
+Text{
+    -fx-font-family: "Arial Unicode MS", sans-serif;
+
+}
 
 .twentyFont {
     -fx-font-size: 20;
