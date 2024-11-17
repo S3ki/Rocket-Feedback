@@ -28,6 +28,8 @@ public class SceneGui extends Application {
     static ResourceBundle bundle = ResourceBundle.getBundle("bundle_EN");
     FXMLLoader fxmlLoader;
 
+    public static String languageCode;
+
     @Override
     public void start(Stage stage) throws Exception {
         fxmlLoader = new FXMLLoader(getClass().getResource("/design.fxml"));
@@ -85,15 +87,19 @@ public class SceneGui extends Application {
         switch (selectedLanguage) {
             case "English":
                 bundle = ResourceBundle.getBundle("bundle_EN");
+                languageCode = "EN";
                 break;
             case "Suomi":
                 bundle = ResourceBundle.getBundle("bundle_FI");
+                languageCode = "FI";
                 break;
             case "日本語":
                 bundle = ResourceBundle.getBundle("bundle_JP");
+                languageCode = "JP";
                 break;
             case "عربي":
                 bundle = ResourceBundle.getBundle("bundle_AR");
+                languageCode = "AR";
                 break;
             default:
                 bundle = ResourceBundle.getBundle("bundle_EN");

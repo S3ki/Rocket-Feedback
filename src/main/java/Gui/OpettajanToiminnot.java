@@ -1,5 +1,6 @@
 package Gui;
 
+import Dao.KurssiDao;
 import Model.FeedBack;
 import Model.Kurssi;
 import Model.Opettaja;
@@ -66,6 +67,9 @@ public class OpettajanToiminnot {
     static Kurssi asetaOikeaKurssi;
     Opettaja opettaja = new Opettaja("Tero");
 
+
+    KurssiDao kurssiDao = new KurssiDao();
+
     @FXML
     void takaisin() {
         loadNextScene("/opettajantoiminnot.fxml", takaisinButton);
@@ -118,6 +122,7 @@ public class OpettajanToiminnot {
         Optional<String> result = dialog.showAndWait();
         result.ifPresent(courseName -> {
             Kurssi newCourse = new Kurssi(courseName);
+            kurssiDao.persist(new Entity.Kurssi(SceneGui.languageCode, courseName));
             kurssit.add(newCourse);
             opettaja.addOpettajalleKurssi(courseName, newCourse);
             System.out.println("Kurssi luotu: " + newCourse.getNimi());

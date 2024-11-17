@@ -4,12 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="118cee9e-9a4e-4f7c-9496-b2531301c7be" name="Changes" comment="Language selection works everywhere in the gui/user interface">
+    <list default="true" id="118cee9e-9a4e-4f7c-9496-b2531301c7be" name="Changes" comment="Tietokanta Fixes and addition">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Dao/OpettajaDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Dao/OpettajaDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Dao/FeedbackDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Dao/FeedbackDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Dao/KurssiDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Dao/KurssiDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Dao/mainDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Dao/mainDB.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Datasource/DatabaseStructure.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Datasource/DatabaseStructure.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Entity/Feedback.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Entity/Feedback.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Entity/Kurssi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Entity/Kurssi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Gui/OpettajanToiminnot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Gui/OpettajanToiminnot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Gui/SceneGui.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Gui/SceneGui.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -225,7 +229,15 @@
       <option name="project" value="LOCAL" />
       <updated>1731763397106</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Tietokanta Fixes and addition">
+      <option name="closed" value="true" />
+      <created>1731860592018</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1731860592018</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -239,7 +251,8 @@
     <MESSAGE value="target file cleaned" />
     <MESSAGE value="localization fix" />
     <MESSAGE value="Language selection works everywhere in the gui/user interface" />
-    <option name="LAST_COMMIT_MESSAGE" value="Language selection works everywhere in the gui/user interface" />
+    <MESSAGE value="Tietokanta Fixes and addition" />
+    <option name="LAST_COMMIT_MESSAGE" value="Tietokanta Fixes and addition" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

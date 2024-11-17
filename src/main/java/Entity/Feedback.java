@@ -11,7 +11,7 @@ public class Feedback {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name="Course_id")
+    @Column(name="feedback_id")
     private int id;
 
     @Column(name="Comment")
@@ -24,7 +24,34 @@ public class Feedback {
     private LocalDate date;
 
 
+    public Feedback(String comment, String langCode){
+        this.comment = comment;
+        this.langCode = langCode;
+        date = LocalDate.now();
+    }
 
 
+    public Feedback() {
 
+    }
+
+    public String getLangCode() {
+        return langCode;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public String getComment() {
+        return comment;
+    }
+
+    public void setComment(String comment) {
+        this.comment = comment;
+    }
+
+    public void setLangCode(String langCode) {
+        this.langCode = langCode;
+    }
 }

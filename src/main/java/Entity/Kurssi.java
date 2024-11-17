@@ -21,9 +21,13 @@ public class Kurssi {
     @Column(name="language_code")
     private String langCode;
 
-    public Kurssi (String firstName, String langCode){
+    @Column(name="name")
+    private String name;
+
+    public Kurssi ( String langCode, String name){
         date = LocalDate.now();
         this.langCode = langCode;
+        this.name = name;
     }
 
     public Kurssi() {
@@ -42,4 +46,11 @@ public class Kurssi {
         return id;
     }
 
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
 }
