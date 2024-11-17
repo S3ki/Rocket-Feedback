@@ -21,14 +21,19 @@ public class Opettaja {
     @Column(name="email")
     private String email;
 
+    @Column(name="language_code")
+    private String langCode;
+
+
 
     public Opettaja() {
     }
 
-    public Opettaja(String firstName, String lastName, String email) {
+    public Opettaja(String firstName, String lastName, String email, String langCode) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
+        this.langCode = langCode;
     }
 
     public int getId() {
@@ -59,5 +64,11 @@ public class Opettaja {
         this.email = email;
     }
 
+    public void setLangCode(String langCode) {
+        this.langCode = langCode;
+    }
 
+    public String getLangCode() {
+        return langCode;
+    }
 }

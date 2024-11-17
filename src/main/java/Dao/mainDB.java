@@ -1,18 +1,30 @@
 package Dao;
 
+import Entity.Feedback;
 import Entity.Opettaja;
+import Entity.Kurssi;
 
 public class mainDB {
     public static void main(String[] args) {
 
-        OpettajaDao opDao = new OpettajaDao();
+//        OpettajaDao opDao = new OpettajaDao();
+//
+//
+//        Opettaja op2 = opDao.find(2);
+//        System.out.println(op2.getFirstName() + " " + op2.getLastName());
+//
+//        op2.setFirstName("Dahl");
+//        opDao.update(op2);
 
-        opDao.persist(new Opettaja("Matti", "Meikäläinen", "Mati@meikäläinen.com"));
+//        KurssiDao kurssi = new KurssiDao();
+//
+//        Kurssi kur1 = new Kurssi("EN", "Math");
+//        kurssi.delete(1);
 
-        Opettaja op2 = opDao.find(2);
-        System.out.println(op2.getFirstName() + " " + op2.getLastName());
+        FeedbackDao feedDao = new FeedbackDao();
 
-        op2.setFirstName("Maija");
-        opDao.update(op2);
+        Feedback feedback = new Feedback("Amazing course", "EN");
+        feedDao.delete(3);
     }
+
 }

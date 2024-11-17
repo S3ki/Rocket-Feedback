@@ -1,5 +1,6 @@
 package Gui;
 
+import Dao.KurssiDao;
 import Model.FeedBack;
 import Model.Kurssi;
 import Model.Opettaja;
@@ -16,6 +17,7 @@ import javafx.stage.Stage;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Optional;
+import java.util.ResourceBundle;
 
 public class OpettajanToiminnot {
 
@@ -64,6 +66,9 @@ public class OpettajanToiminnot {
 
     static Kurssi asetaOikeaKurssi;
     Opettaja opettaja = new Opettaja("Tero");
+
+
+    KurssiDao kurssiDao = new KurssiDao();
 
     @FXML
     void takaisin() {
@@ -117,6 +122,7 @@ public class OpettajanToiminnot {
         Optional<String> result = dialog.showAndWait();
         result.ifPresent(courseName -> {
             Kurssi newCourse = new Kurssi(courseName);
+            kurssiDao.persist(new Entity.Kurssi(SceneGui.languageCode, courseName));
             kurssit.add(newCourse);
             opettaja.addOpettajalleKurssi(courseName, newCourse);
             System.out.println("Kurssi luotu: " + newCourse.getNimi());
@@ -127,10 +133,6 @@ public class OpettajanToiminnot {
 
 
     void loadKurssitOpettajalle(){
-        Kurssi kurssi1 = new Kurssi("Biologia");
-        Kurssi kurssi2 = new Kurssi("Historia");
-        kurssit.add(kurssi1);
-        kurssit.add(kurssi2);
         nappiVbox.setSpacing(10);
         for (Kurssi kurssi : kurssit) {
             Button kurssiButton = new Button(kurssi.getNimi());
@@ -175,6 +177,8 @@ public class OpettajanToiminnot {
         try {
 
             FXMLLoader loader = new FXMLLoader(getClass().getResource(fxmlFile));
+            loader.setResources(SceneGui.bundle);
+
             AnchorPane nextView = loader.load();
 
             Stage stage = (Stage) sourceButton.getScene().getWindow();

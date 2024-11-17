@@ -1,26 +1,27 @@
 package Dao;
 
-import Entity.Opettaja;
+import Entity.Feedback;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityManagerFactory;
 import jakarta.persistence.Persistence;
 
-public class OpettajaDao {
+public class FeedbackDao {
+
     private static EntityManagerFactory emf = Persistence.createEntityManagerFactory("FeedbackMariaDbUnit");
-    public void persist(Opettaja opEmp){
+    public void persist(Feedback opEmp){
         EntityManager em = Datasource.MariaDbJpaConnection.getInstance();
         em.getTransaction().begin();
         em.persist(opEmp);
         em.getTransaction().commit();
     }
-    public Opettaja find (int id){
+    public Feedback find (int id){
         EntityManager em = Datasource.MariaDbJpaConnection.getInstance();
-        Opettaja opEmp = em.find(Opettaja.class, id);
-        System.out.println(opEmp.getFirstName() + " " + opEmp.getLastName());
+        Feedback opEmp = em.find(Feedback.class, id);
+        System.out.println(opEmp.getComment() + " " + opEmp.getLangCode());
         return opEmp;
     }
 
-    public void update(Opettaja opEmp){
+    public void update(Feedback opEmp){
         EntityManager em = Datasource.MariaDbJpaConnection.getInstance();
         em.getTransaction().begin();
         em.merge(opEmp);
@@ -29,7 +30,7 @@ public class OpettajaDao {
 
     public void delete(int id){
         EntityManager em = Datasource.MariaDbJpaConnection.getInstance();
-        Opettaja opEmp = em.find(Opettaja.class, id);
+        Feedback opEmp = em.find(Feedback.class, id);
         em.getTransaction().begin();
         em.remove(opEmp);
         em.getTransaction().commit();

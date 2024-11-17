@@ -4,13 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="118cee9e-9a4e-4f7c-9496-b2531301c7be" name="Changes" comment="Database">
+    <list default="true" id="118cee9e-9a4e-4f7c-9496-b2531301c7be" name="Changes" comment="Tietokanta Fixes and addition">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Dao/FeedbackDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Dao/FeedbackDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Dao/KurssiDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Dao/KurssiDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Dao/mainDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Dao/mainDB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Datasource/DatabaseStructure.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Datasource/DatabaseStructure.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Entity/Feedback.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Entity/Feedback.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Entity/Kurssi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Entity/Kurssi.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Gui/OpettajanToiminnot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Gui/OpettajanToiminnot.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Dao/OpettajaDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Dao/OpettajaDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Gui/OpettajanToiminnot.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Gui/OpettajanToiminnot.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/META-INF/persistence.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Model/Kurssi.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Model/Kurssi.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Gui/SceneGui.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Gui/SceneGui.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,15 +23,15 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Dockerfile" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="Muha" />
+        <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -62,7 +65,7 @@
     "JUnit.OpettajaTest.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "Localization",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -71,6 +74,7 @@
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "File.Encoding",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -84,7 +88,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Docker.Dockerfile">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="RocketFeed" />
@@ -98,12 +102,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="main2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Gui.main2" />
+    <configuration name="mainDB" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Dao.mainDB" />
       <module name="RocketFeed" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value=".*" />
+          <option name="PATTERN" value="Dao.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -138,16 +142,18 @@
       <method v="2" />
     </configuration>
     <configuration default="true" type="docker-deploy" factoryName="dockerfile" temporary="true">
-      <deployment type="dockerfile" />
+      <deployment type="dockerfile">
+        <settings />
+      </deployment>
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Docker.Dockerfile" />
         <item itemvalue="Application.Main" />
-        <item itemvalue="Application.main2" />
-        <item itemvalue="JUnit.KurssiTest" />
+        <item itemvalue="Application.mainDB" />
         <item itemvalue="JUnit.OpettajaTest" />
+        <item itemvalue="JUnit.KurssiTest" />
+        <item itemvalue="Docker.Dockerfile" />
       </list>
     </recent_temporary>
   </component>
@@ -191,7 +197,47 @@
       <option name="project" value="LOCAL" />
       <updated>1727998765505</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="small Localization update">
+      <option name="closed" value="true" />
+      <created>1731570481815</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1731570481815</updated>
+    </task>
+    <task id="LOCAL-00005" summary="target file cleaned">
+      <option name="closed" value="true" />
+      <created>1731570568340</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1731570568340</updated>
+    </task>
+    <task id="LOCAL-00006" summary="localization fix">
+      <option name="closed" value="true" />
+      <created>1731585967993</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1731585967993</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Language selection works everywhere in the gui/user interface">
+      <option name="closed" value="true" />
+      <created>1731763397105</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1731763397106</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Tietokanta Fixes and addition">
+      <option name="closed" value="true" />
+      <created>1731860592018</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1731860592018</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -201,7 +247,16 @@
     <MESSAGE value="Napit latautuvat nyt" />
     <MESSAGE value="Pikku fixejä." />
     <MESSAGE value="Database" />
-    <option name="LAST_COMMIT_MESSAGE" value="Database" />
+    <MESSAGE value="small Localization update" />
+    <MESSAGE value="target file cleaned" />
+    <MESSAGE value="localization fix" />
+    <MESSAGE value="Language selection works everywhere in the gui/user interface" />
+    <MESSAGE value="Tietokanta Fixes and addition" />
+    <option name="LAST_COMMIT_MESSAGE" value="Tietokanta Fixes and addition" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/RocketFeed$All_in_RocketFeed.ic" NAME="All in RocketFeed Coverage Results" MODIFIED="1726813558562" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />

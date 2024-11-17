@@ -89,7 +89,7 @@
 
 .text {
     -fx-font-color: #2d2e30;
-    -fx-font-family: "Montserrat", sans-serif;
+    -fx-font-family: "Arial Unicode MS", sans-serif;
     -fx-font-optical-sizing: auto;
     -fx-font-style: normal;
 }
@@ -97,7 +97,15 @@
 .thirtyFont {
     -fx-font-size: 30;
 }
+Text{
+    -fx-font-family: "Arial Unicode MS", sans-serif;
+
+}
 
 .twentyFont {
     -fx-font-size: 20;
+}
+
+.label{
+    -fx-font-family: "Arial Unicode MS", sans-serif;
 }
