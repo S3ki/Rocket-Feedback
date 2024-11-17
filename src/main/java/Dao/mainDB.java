@@ -7,12 +7,11 @@ public class mainDB {
 
         OpettajaDao opDao = new OpettajaDao();
 
-        opDao.persist(new Opettaja("Matti", "Meikäläinen", "Mati@meikäläinen.com"));
 
         Opettaja op2 = opDao.find(2);
         System.out.println(op2.getFirstName() + " " + op2.getLastName());
 
-        op2.setFirstName("Maija");
+        op2.setFirstName("Dahl");
         opDao.update(op2);
     }
 }

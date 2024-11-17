@@ -4,15 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="118cee9e-9a4e-4f7c-9496-b2531301c7be" name="Changes" comment="localization fix">
+    <list default="true" id="118cee9e-9a4e-4f7c-9496-b2531301c7be" name="Changes" comment="Language selection works everywhere in the gui/user interface">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Gui/OpettajanToiminnot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Gui/OpettajanToiminnot.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Gui/OppilasToiminnot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Gui/OppilasToiminnot.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Gui/SceneGui.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Gui/SceneGui.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/design.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/design.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/kirjaudu.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/kirjaudu.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/oppilaskurssit.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/oppilaskurssit.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Dao/OpettajaDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Dao/OpettajaDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Dao/mainDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Dao/mainDB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Datasource/DatabaseStructure.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Datasource/DatabaseStructure.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,8 +19,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Dockerfile" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -101,12 +98,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="main2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Gui.main2" />
+    <configuration name="mainDB" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Dao.mainDB" />
       <module name="RocketFeed" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value=".*" />
+          <option name="PATTERN" value="Dao.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -149,10 +146,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
+        <item itemvalue="Application.mainDB" />
         <item itemvalue="JUnit.OpettajaTest" />
         <item itemvalue="JUnit.KurssiTest" />
         <item itemvalue="Docker.Dockerfile" />
-        <item itemvalue="Application.main2" />
       </list>
     </recent_temporary>
   </component>
@@ -220,7 +217,15 @@
       <option name="project" value="LOCAL" />
       <updated>1731585967993</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Language selection works everywhere in the gui/user interface">
+      <option name="closed" value="true" />
+      <created>1731763397105</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1731763397106</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -233,7 +238,8 @@
     <MESSAGE value="small Localization update" />
     <MESSAGE value="target file cleaned" />
     <MESSAGE value="localization fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="localization fix" />
+    <MESSAGE value="Language selection works everywhere in the gui/user interface" />
+    <option name="LAST_COMMIT_MESSAGE" value="Language selection works everywhere in the gui/user interface" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
