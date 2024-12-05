@@ -94,20 +94,20 @@ mvn test
 
 ## ER-Diagram
 
-![picture of ER-Diagram](/Er-malli.png)
+![picture of ER-Diagram](Er-malli.png)
 
 ## Relational_Schema
 
-![picture of relational schema](/Relaatiomalli.png)
+![picture of relational schema](Relaatiomalli.png)
 
 
 ## Activity_Model
 
-![picture of activity model](/Activity.png)
+![picture of activity model](Activity.png)
 
 ## Use_Case_Model
 
-![picture of Use Case Model](/Usecasemalli.png)
+![picture of Use Case Model](Usecasemalli.png)
 
 ## Database_Structure
 
